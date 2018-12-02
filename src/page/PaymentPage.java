@@ -65,6 +65,15 @@ public class PaymentPage {
 	@FindBy(xpath="//div[@data-funding-source='paypal']")
 	private WebElement payPalBtn;
 	
+	@FindBy(id="email")
+	private WebElement payPalEmail;
+	
+	@FindBy(id="password")
+	private WebElement payPalPassword;
+	
+	@FindBy(id="btnLogin")
+	private WebElement payPalLogin;
+	
 	@FindBy(xpath="//button[@class='button blue__btn submitSubscriptionBtn']")
 	private WebElement confirmBtn;
 	
