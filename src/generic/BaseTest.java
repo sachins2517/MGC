@@ -47,6 +47,6 @@ public class BaseTest implements IAutoConst {
 		else {
 			Reporter.log("TestName: "+name+" Status: Pass", true);
 		}
-		//driver.quit();
+		driver.quit();
 	}
 }

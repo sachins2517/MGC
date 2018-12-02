@@ -1,22 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="6" total="6" passed="0">
   <reporter-output>
     <line>
-      <![CDATA[Submitted Successfully.]]>
+      <![CDATA[Test: testA is Fail]]>
     </line>
     <line>
-      <![CDATA[Test: testA is Pass]]>
+      <![CDATA[TestName: testA Status: Fail]]>
     </line>
     <line>
-      <![CDATA[TestName: testA Status: Pass]]>
+      <![CDATA[PHOTO: ./photo/Sun Dec 02 15_29_22 IST 2018.png]]>
+    </line>
+    <line>
+      <![CDATA[Test: testA is Fail]]>
+    </line>
+    <line>
+      <![CDATA[TestName: testA Status: Fail]]>
+    </line>
+    <line>
+      <![CDATA[PHOTO: ./photo/Sun Dec 02 15_29_57 IST 2018.png]]>
+    </line>
+    <line>
+      <![CDATA[Test: testA is Fail]]>
+    </line>
+    <line>
+      <![CDATA[TestName: testA Status: Fail]]>
+    </line>
+    <line>
+      <![CDATA[PHOTO: ./photo/Sun Dec 02 15_30_22 IST 2018.png]]>
+    </line>
+    <line>
+      <![CDATA[Test: testA is Fail]]>
+    </line>
+    <line>
+      <![CDATA[TestName: testA Status: Fail]]>
+    </line>
+    <line>
+      <![CDATA[PHOTO: ./photo/Sun Dec 02 15_30_42 IST 2018.png]]>
+    </line>
+    <line>
+      <![CDATA[Test: testA is Fail]]>
+    </line>
+    <line>
+      <![CDATA[TestName: testA Status: Fail]]>
+    </line>
+    <line>
+      <![CDATA[PHOTO: ./photo/Sun Dec 02 15_31_21 IST 2018.png]]>
+    </line>
+    <line>
+      <![CDATA[Test: testA is Fail]]>
+    </line>
+    <line>
+      <![CDATA[TestName: testA Status: Fail]]>
+    </line>
+    <line>
+      <![CDATA[PHOTO: ./photo/Sun Dec 02 15_31_52 IST 2018.png]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28223" started-at="2018-11-26T14:49:08Z" finished-at="2018-11-26T14:49:36Z">
+  <suite name="Suite" duration-ms="178719" started-at="2018-12-02T09:58:56Z" finished-at="2018-12-02T10:01:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28223" started-at="2018-11-26T14:49:08Z" finished-at="2018-11-26T14:49:36Z">
-      <class name="script.Clinician_Reg_TC4">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Clinician_Reg_TC4@631330c]" name="openApp" is-config="true" duration-ms="12415" started-at="2018-11-26T14:49:08Z" finished-at="2018-11-26T14:49:21Z">
+    <test name="Test" duration-ms="178719" started-at="2018-12-02T09:58:56Z" finished-at="2018-12-02T10:01:54Z">
+      <class name="script.LabAdmin_Reg_TC5">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.LabAdmin_Reg_TC5@4c70fda8]" name="openApp" is-config="true" duration-ms="11143" started-at="2018-12-02T15:30:23Z" finished-at="2018-12-02T15:30:34Z">
           <params>
             <param index="0">
               <value>
@@ -32,31 +77,481 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testA()[pri:0, instance:script.Clinician_Reg_TC4@631330c]" name="testA" duration-ms="15772" started-at="2018-11-26T14:49:21Z" finished-at="2018-11-26T14:49:36Z">
+        <test-method status="FAIL" signature="testA()[pri:0, instance:script.LabAdmin_Reg_TC5@4c70fda8]" name="testA" duration-ms="8098" started-at="2018-12-02T15:30:34Z" finished-at="2018-12-02T15:30:42Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at page.RegisterPage.checkForRegSuccess(RegisterPage.java:232)
+	at script.LabAdmin_Reg_TC5.testA(LabAdmin_Reg_TC5.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Submitted Successfully.]]>
-            </line>
-            <line>
-              <![CDATA[Test: testA is Pass]]>
+              <![CDATA[Test: testA is Fail]]>
             </line>
           </reporter-output>
         </test-method> <!-- testA -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Clinician_Reg_TC4@631330c]" name="closeApp" is-config="true" duration-ms="2" started-at="2018-11-26T14:49:36Z" finished-at="2018-11-26T14:49:36Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.LabAdmin_Reg_TC5@4c70fda8]" name="closeApp" is-config="true" duration-ms="1052" started-at="2018-12-02T15:30:42Z" finished-at="2018-12-02T15:30:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testA status=SUCCESS method=Clinician_Reg_TC4.testA()[pri:0, instance:script.Clinician_Reg_TC4@631330c] output=Submitted Successfully.]]]>
+                <![CDATA[[TestResult name=testA status=FAILURE method=LabAdmin_Reg_TC5.testA()[pri:0, instance:script.LabAdmin_Reg_TC5@4c70fda8] output=Test: testA is Fail]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[TestName: testA Status: Pass]]>
+              <![CDATA[TestName: testA Status: Fail]]>
+            </line>
+            <line>
+              <![CDATA[PHOTO: ./photo/Sun Dec 02 15_30_42 IST 2018.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- script.LabAdmin_Reg_TC5 -->
+      <class name="script.Clinician_Reg_TC4">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Clinician_Reg_TC4@26be92ad]" name="openApp" is-config="true" duration-ms="13963" started-at="2018-12-02T15:29:57Z" finished-at="2018-12-02T15:30:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="FAIL" signature="testA()[pri:0, instance:script.Clinician_Reg_TC4@26be92ad]" name="testA" duration-ms="10085" started-at="2018-12-02T15:30:11Z" finished-at="2018-12-02T15:30:22Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at page.RegisterPage.checkForRegSuccess(RegisterPage.java:232)
+	at script.Clinician_Reg_TC4.testA(Clinician_Reg_TC4.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test: testA is Fail]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Clinician_Reg_TC4@26be92ad]" name="closeApp" is-config="true" duration-ms="1396" started-at="2018-12-02T15:30:22Z" finished-at="2018-12-02T15:30:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA status=FAILURE method=Clinician_Reg_TC4.testA()[pri:0, instance:script.Clinician_Reg_TC4@26be92ad] output=Test: testA is Fail]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestName: testA Status: Fail]]>
+            </line>
+            <line>
+              <![CDATA[PHOTO: ./photo/Sun Dec 02 15_30_22 IST 2018.png]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- script.Clinician_Reg_TC4 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="script.Others_Reg_TC6">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Others_Reg_TC6@475530b9]" name="openApp" is-config="true" duration-ms="17853" started-at="2018-12-02T15:28:56Z" finished-at="2018-12-02T15:29:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="FAIL" signature="testA()[pri:0, instance:script.Others_Reg_TC6@475530b9]" name="testA" duration-ms="8764" started-at="2018-12-02T15:29:14Z" finished-at="2018-12-02T15:29:22Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at page.RegisterPage.checkForRegSuccess(RegisterPage.java:232)
+	at script.Others_Reg_TC6.testA(Others_Reg_TC6.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test: testA is Fail]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Others_Reg_TC6@475530b9]" name="closeApp" is-config="true" duration-ms="1309" started-at="2018-12-02T15:29:22Z" finished-at="2018-12-02T15:29:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA status=FAILURE method=Others_Reg_TC6.testA()[pri:0, instance:script.Others_Reg_TC6@475530b9] output=Test: testA is Fail]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestName: testA Status: Fail]]>
+            </line>
+            <line>
+              <![CDATA[PHOTO: ./photo/Sun Dec 02 15_29_22 IST 2018.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- script.Others_Reg_TC6 -->
+      <class name="script.Invalid_Email_TC2">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Invalid_Email_TC2@1d057a39]" name="openApp" is-config="true" duration-ms="17587" started-at="2018-12-02T15:29:24Z" finished-at="2018-12-02T15:29:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="FAIL" signature="testA()[pri:0, instance:script.Invalid_Email_TC2@1d057a39]" name="testA" duration-ms="16121" started-at="2018-12-02T15:29:41Z" finished-at="2018-12-02T15:29:57Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.ExpectedConditions$12.apply(ExpectedConditions.java:355)
+	at org.openqa.selenium.support.ui.ExpectedConditions$12.apply(ExpectedConditions.java:350)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at page.RegisterPage.waitForAccessCodePageLoad(RegisterPage.java:193)
+	at script.Invalid_Email_TC2.testA(Invalid_Email_TC2.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test: testA is Fail]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Invalid_Email_TC2@1d057a39]" name="closeApp" is-config="true" duration-ms="127" started-at="2018-12-02T15:29:57Z" finished-at="2018-12-02T15:29:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA status=FAILURE method=Invalid_Email_TC2.testA()[pri:0, instance:script.Invalid_Email_TC2@1d057a39] output=Test: testA is Fail]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestName: testA Status: Fail]]>
+            </line>
+            <line>
+              <![CDATA[PHOTO: ./photo/Sun Dec 02 15_29_57 IST 2018.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- script.Invalid_Email_TC2 -->
+      <class name="script.RegisterAfterSignout_TC3">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.RegisterAfterSignout_TC3@14acaea5]" name="openApp" is-config="true" duration-ms="16120" started-at="2018-12-02T15:31:22Z" finished-at="2018-12-02T15:31:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="FAIL" signature="testA()[pri:0, instance:script.RegisterAfterSignout_TC3@14acaea5]" name="testA" duration-ms="14254" started-at="2018-12-02T15:31:38Z" finished-at="2018-12-02T15:31:52Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for text ('Welcome to My Gene Counsel!') to be present in element [[ChromeDriver: chrome on XP (ba0c5ad6b4da77865532cf4b1c860331)] -> xpath: //div[@class='login__title']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SACHIN', ip: '10.101.84.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\Sachin\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52078}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: ba0c5ad6b4da77865532cf4b1c860331]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Welcome to My Gene Counsel!') to be present in element [[ChromeDriver: chrome on XP (ba0c5ad6b4da77865532cf4b1c860331)] -> xpath: //div[@class='login__title']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SACHIN', ip: '10.101.84.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\Sachin\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52078}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: ba0c5ad6b4da77865532cf4b1c860331
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at page.RegisterPage.waitForAccessCodePageLoad(RegisterPage.java:193)
+	at script.RegisterAfterSignout_TC3.testA(RegisterAfterSignout_TC3.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test: testA is Fail]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.RegisterAfterSignout_TC3@14acaea5]" name="closeApp" is-config="true" duration-ms="2186" started-at="2018-12-02T15:31:52Z" finished-at="2018-12-02T15:31:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA status=FAILURE method=RegisterAfterSignout_TC3.testA()[pri:0, instance:script.RegisterAfterSignout_TC3@14acaea5] output=Test: testA is Fail]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestName: testA Status: Fail]]>
+            </line>
+            <line>
+              <![CDATA[PHOTO: ./photo/Sun Dec 02 15_31_52 IST 2018.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- script.RegisterAfterSignout_TC3 -->
+      <class name="script.Valid_Email_TC1">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Valid_Email_TC1@224edc67]" name="openApp" is-config="true" duration-ms="16721" started-at="2018-12-02T15:30:43Z" finished-at="2018-12-02T15:31:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="FAIL" signature="testA()[pri:0, instance:script.Valid_Email_TC1@224edc67]" name="testA" duration-ms="20774" started-at="2018-12-02T15:31:00Z" finished-at="2018-12-02T15:31:21Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for text ('Welcome to My Gene Counsel!') to be present in element [[ChromeDriver: chrome on XP (a6016e4880052c3ee803dbaa58bb7e17)] -> xpath: //div[@class='login__title']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SACHIN', ip: '10.101.84.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\Sachin\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52014}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: a6016e4880052c3ee803dbaa58bb7e17]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Welcome to My Gene Counsel!') to be present in element [[ChromeDriver: chrome on XP (a6016e4880052c3ee803dbaa58bb7e17)] -> xpath: //div[@class='login__title']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'SACHIN', ip: '10.101.84.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\Sachin\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52014}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: a6016e4880052c3ee803dbaa58bb7e17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at page.RegisterPage.waitForAccessCodePageLoad(RegisterPage.java:193)
+	at script.Valid_Email_TC1.testA(Valid_Email_TC1.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test: testA is Fail]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Valid_Email_TC1@224edc67]" name="closeApp" is-config="true" duration-ms="1059" started-at="2018-12-02T15:31:21Z" finished-at="2018-12-02T15:31:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA status=FAILURE method=Valid_Email_TC1.testA()[pri:0, instance:script.Valid_Email_TC1@224edc67] output=Test: testA is Fail]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestName: testA Status: Fail]]>
+            </line>
+            <line>
+              <![CDATA[PHOTO: ./photo/Sun Dec 02 15_31_21 IST 2018.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- script.Valid_Email_TC1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
