@@ -161,11 +161,11 @@ public class PaymentPage {
 			privacyLink.click();
 	}
 	
-	public void clickCardConfirm() {
+	public void clickConfirm() {
 			confirmCardBtn.click();
 	}
 	
-	public void clickCardCancel() {
+	public void clickCancel() {
 			cancelCardBtn.click();
 	}
 	
@@ -198,6 +198,7 @@ public class PaymentPage {
 	}
 	
 	public void enterPaypalEmail(String email2) {
+			payPalEmail.clear();
 			payPalEmail.sendKeys(email2);
 	}
 

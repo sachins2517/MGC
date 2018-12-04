@@ -8,21 +8,25 @@ import page.LLR_RequestListingPage;
 import page.PaymentPage;
 import page.RegisterPage;
 
-public class PaymentWithCard_TC7 extends BaseTest{
+public class PaymentWithPaypal_TC8 extends BaseTest{
 	
 	@Test
 	public void testA() {
 	
-		String cardNum = Utility.getXLData(DATA_PATH, "Sheet1", 3, 0);
-		String expiry = Utility.getXLData(DATA_PATH, "Sheet1", 3, 1);
+		String paypalemail = Utility.getXLData(DATA_PATH, "Sheet1", 4, 0);
+		String paypalpassword = Utility.getXLData(DATA_PATH, "Sheet1", 4, 1);
 	
 		PaymentPage pay = new PaymentPage(driver);
 		RegisterPage reg = new RegisterPage(driver);
 		LLR_RequestListingPage req = new LLR_RequestListingPage(driver);
 		pay.verifyForAmount();
-		pay.clickCardOption();
-		pay.enterCardNumber(driver, cardNum);
-		pay.enterExpiry(driver, expiry);
+		pay.clickPayPal(driver);
+		pay.switchToPayPalScreen(driver);
+		pay.enterPaypalEmail(paypalemail);
+		pay.clickPaypalNext();
+		pay.enterPaypalPassword(paypalpassword);
+		pay.clickPaypalLogin();
+		pay.clickPaypalAgree();
 		pay.clickTerms();
 		reg.switchToMainPage(driver);
 		pay.clickPrivacy();
