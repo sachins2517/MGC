@@ -11,14 +11,16 @@ import page.RegisterPage;
 public class PaymentWithPaypal_TC8 extends BaseTest{
 	
 	@Test
-	public void testA() {
+	public void testA() throws InterruptedException {
 	
 		String paypalemail = Utility.getXLData(DATA_PATH, "Sheet1", 4, 0);
 		String paypalpassword = Utility.getXLData(DATA_PATH, "Sheet1", 4, 1);
-	
+		
+		//Valid_Email_TC1 registration = new Valid_Email_TC1();
 		PaymentPage pay = new PaymentPage(driver);
 		RegisterPage reg = new RegisterPage(driver);
 		LLR_RequestListingPage req = new LLR_RequestListingPage(driver);
+		//registration.testA();
 		pay.verifyForAmount();
 		pay.clickPayPal(driver);
 		pay.switchToPayPalScreen(driver);
