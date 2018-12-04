@@ -8,7 +8,6 @@ import page.LLR_RequestListingPage;
 import page.PaymentPage;
 import page.RegisterPage;
 
-
 public class PaymentWithCard_TC7 extends BaseTest{
 	
 	@Test
