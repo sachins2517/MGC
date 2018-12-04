@@ -111,9 +111,7 @@ public class PaymentPage {
 			if(paymentSection.isDisplayed())
 				Reporter.log("Payment Section is displayed.", true);
 			else
-			{
 				Assert.fail();
-			}
 		}
 
 	public void clickLogout() {
