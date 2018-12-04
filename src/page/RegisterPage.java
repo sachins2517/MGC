@@ -198,7 +198,7 @@ public void switchToMainPage(WebDriver driver) {
 		driver.switchTo().window(parent);
 	}
 
-public void checkForPaymentPage() {
+/*public void checkForPaymentPage() {
 	if(paymentSection.isDisplayed())
 		Reporter.log("Payment Page is Displayed.", true);
 	else
@@ -210,7 +210,7 @@ public void checkForPaymentPage() {
 //		Reporter.log("Failed", true);
 		Assert.fail();
 	}
-}
+}*/
 
 public void sendOrganisationName(String oName) {
 		orgName.sendKeys(oName);

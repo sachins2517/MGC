@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import generic.BaseTest;
 import generic.Utility;
+import page.PaymentPage;
 import page.RegisterPage;
 
 public class Clinician_Reg_TC4 extends BaseTest {

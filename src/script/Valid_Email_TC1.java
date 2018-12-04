@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import generic.BaseTest;
 import generic.Utility;
 import page.AccessCodePage;
+import page.PaymentPage;
 import page.RegisterPage;
 
 public class Valid_Email_TC1 extends BaseTest {
@@ -20,6 +21,7 @@ public class Valid_Email_TC1 extends BaseTest {
 		
 		RegisterPage reg = new RegisterPage(driver);
 		AccessCodePage access = new AccessCodePage(driver);
+		PaymentPage pay = new PaymentPage(driver);
 		reg.setFirstName(fname);
 		reg.setLastName(lname);
 		reg.email(email);
@@ -44,7 +46,8 @@ public class Valid_Email_TC1 extends BaseTest {
 		System.out.println("Checking for access code presence");
 		Thread.sleep(20000);
 		access.clickSubmit();
-		reg.checkForPaymentPage();	
+		//reg.checkForPaymentPage();	
+		pay.checkPaymentSection();
 	}
 }
 
