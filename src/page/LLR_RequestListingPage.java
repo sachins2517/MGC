@@ -207,32 +207,6 @@ public class LLR_RequestListingPage {
     
     
     
-    
-    
-    
-  
-  
-    
-    
-    
-    
-    
-    
-    
-
-  
-    
-  
-  
-  
-  
-  
-    
-    
-    
-  
-    
-    
 	//declaration
 	public LLR_RequestListingPage(WebDriver driver) {
 			PageFactory.initElements(driver,this);
@@ -244,4 +218,5 @@ public class LLR_RequestListingPage {
 			else
 				Assert.fail();
 		}
+	
 }

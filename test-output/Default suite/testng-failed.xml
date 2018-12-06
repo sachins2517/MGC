@@ -3,18 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="script.Clinician_Reg_TC4"/>
+      <class name="script.CMC_Auto"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="script.Clinician_Reg_TC4">
-        <methods>
-          <include name="openApp"/>
-          <include name="testA"/>
-          <include name="closeApp"/>
-        </methods>
-      </class> <!-- script.Clinician_Reg_TC4 -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
