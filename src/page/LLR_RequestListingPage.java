@@ -213,10 +213,7 @@ public class LLR_RequestListingPage {
 		}
 
 	public void checkListingPage() {
-			if(llrListingPage.isDisplayed())
-				Reporter.log("LLR Request Listing page is displayed.", true);
-			else
-				Assert.fail();
+			
 		}
 	
 }
