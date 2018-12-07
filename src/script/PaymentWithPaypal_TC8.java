@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import generic.BaseTest;
 import generic.Utility;
-import page.LLR_RequestListingPage;
+import page.LLR_RequestPage;
 import page.PaymentPage;
 import page.RegisterPage;
 
@@ -19,7 +19,7 @@ public class PaymentWithPaypal_TC8 extends BaseTest{
 		//Valid_Email_TC1 registration = new Valid_Email_TC1();
 		PaymentPage pay = new PaymentPage(driver);
 		RegisterPage reg = new RegisterPage(driver);
-		LLR_RequestListingPage req = new LLR_RequestListingPage(driver);
+		LLR_RequestPage req = new LLR_RequestPage(driver);
 		//registration.testA();
 		pay.verifyForAmount();
 		pay.clickPayPal(driver);
@@ -36,6 +36,6 @@ public class PaymentWithPaypal_TC8 extends BaseTest{
 		pay.clickConfirmSubscription();
 		pay.verifyConfAmount();
 		pay.clickConfirm();
-		req.checkListingPage();
+		req.checkRequestPage();
 	}
 }

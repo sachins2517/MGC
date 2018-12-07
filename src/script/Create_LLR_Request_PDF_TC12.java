@@ -8,7 +8,7 @@ import page.LLR_Listing_Page;
 import page.LLR_RequestPage;
 import page.RegisterPage;
 
-public class Create_LLR_Request_TC9 extends BaseTest{
+public class Create_LLR_Request_PDF_TC12 extends BaseTest{
 	
 	@Test
 	public void testA() throws InterruptedException {
@@ -19,7 +19,7 @@ public class Create_LLR_Request_TC9 extends BaseTest{
 		String resType = Utility.getXLData(DATA_PATH, "Sheet1", 8, 4);
 		String genType = Utility.getXLData(DATA_PATH, "Sheet1", 8, 5);
 		String mutation = Utility.getXLData(DATA_PATH, "Sheet1", 8, 6);
-		//String imgPath = Utility.getXLData(DATA_PATH, "Sheet1", 8, 7);
+		String imgPath = Utility.getXLData(DATA_PATH, "Sheet1", 8, 9);
 		
 		CMS_Auto c = new CMS_Auto();
 		c.creationOfDDM();
@@ -34,6 +34,7 @@ public class Create_LLR_Request_TC9 extends BaseTest{
 		request.selectResultType(resType);
 		request.selectgeneTestType(genType);
 		request.selectmutationName(mutation);
+		request.uploadFile(imgPath);
 		request.clickTerms();
 		reg.switchToMainPage(driver);
 		request.clickPrivacy();
@@ -41,6 +42,7 @@ public class Create_LLR_Request_TC9 extends BaseTest{
 		request.clickSubmit();
 		request.clickIDoNotHave();
 		request.clickSubmitBtn();
+		request.clickFinalSubmit();
 		list.clickOK();
 		list.checkListingPage();
 	}
