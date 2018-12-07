@@ -219,10 +219,15 @@ public class LLR_RequestPage {
 	}
 	
 	public void checkForEditing() {
-			if(labName.isEnabled())
-				Reporter.log("The Report is editable.", true);
-			else
+			if(!labName.isEnabled() && !date.isEnabled())
+			{
 				Reporter.log("The Report is not editable.", true);
+			}
+			else
+			{
+				Reporter.log("The Report is editable.", true);
+				Assert.fail();
+			}
 	}
 	
 	public void logOut() {
