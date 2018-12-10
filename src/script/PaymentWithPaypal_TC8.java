@@ -34,7 +34,7 @@ public class PaymentWithPaypal_TC8 extends BaseTest{
 		pay.verifyForAmount();
 		pay.payPalOption();
 		pay.clickPayPal(driver);
-		
+		pay.parentWindow(driver);
 		pay.switchToPayPalScreen(driver);
 		Thread.sleep(5000);
 		pay.enterPaypalEmail(paypalemail);

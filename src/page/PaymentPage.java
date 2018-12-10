@@ -109,6 +109,8 @@ public class PaymentPage {
 	@FindBy(xpath="//button[@class='button blue__btn submitSubscriptionBtn']")
 	private WebElement confirmSubBtn;
 	
+	String winHandleBefore;
+	
 	//declaration
 	public PaymentPage(WebDriver driver) {
 			PageFactory.initElements(driver,this);
@@ -201,6 +203,10 @@ public class PaymentPage {
 			payPalBtn.click();
 	}
 	
+	public void parentWindow(WebDriver driver) {
+			winHandleBefore = driver.getWindowHandle();
+		}
+	
 	public void switchToPayPalScreen(WebDriver driver) {
 		 	//String winHandleBefore = driver.getWindowHandle();
 		 	for(String winHandle : driver.getWindowHandles())
@@ -214,10 +220,7 @@ public class PaymentPage {
 	}
 	
 	public void switchBack(WebDriver driver) {
-			String parent = driver.getWindowHandle();
-			System.out.println("Parent Window Handle: "+parent);
-			driver.switchTo().window(parent);
-			driver.switchTo().defaultContent();
+			driver.switchTo().window(winHandleBefore);
 	}
 	
 	public void enterPaypalEmail(String email2) {
