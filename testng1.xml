@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="script.Valid_Email_TC1"/>
-      <class name="script.PaymentWithCard_TC7"/>
+      <class name="script.PaymentWithPaypal_TC8"/>   
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,5 +1,9 @@
 package page;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -36,14 +40,17 @@ public class PaymentPage {
 	@FindBy(id="applyBtn")
 	private WebElement apply;
 	
-	@FindBy(className="//div[@aria-label='Paying with Card']")
+	@FindBy(xpath="//div[@class='braintree-option braintree-option__card']")
 	private WebElement cardOption;
 	
-	@FindBy(xpath="//div[@aria-label='Paying with PayPal']")
+	@FindBy(xpath="//div[@class='braintree-option braintree-option__paypal']")
 	private WebElement paypalOption;
 
 	@FindBy(id="braintree-hosted-field-number")
 	private WebElement cardFrame;
+	
+	@FindBy(id="braintree-hosted-field-expirationDate")
+	private WebElement cardFrameExpiry;
 	
 	@FindBy(id="credit-card-number")
 	private WebElement cardNumEntry;
@@ -142,11 +149,13 @@ public class PaymentPage {
 	public void enterCardNumber(WebDriver driver, String cardNum) {
 			driver.switchTo().frame(cardFrame);
 			cardNumEntry.sendKeys(cardNum);
+			driver.switchTo().defaultContent();
 	}
 	
-	public void enterExpiry(WebDriver driver, String expiry) {
-			driver.switchTo().frame(cardFrame);
+	public void enterExpiry(WebDriver driver, String expiry) throws AWTException {
+			driver.switchTo().frame(cardFrameExpiry);
 			cardExpiry.sendKeys(expiry);
+			driver.switchTo().defaultContent();
 	}
 	
 	public void clickOtherPayment() {
@@ -193,8 +202,22 @@ public class PaymentPage {
 	}
 	
 	public void switchToPayPalScreen(WebDriver driver) {
-			String handle = driver.getWindowHandle();
-			driver.switchTo().window(handle);
+		 	//String winHandleBefore = driver.getWindowHandle();
+		 	for(String winHandle : driver.getWindowHandles())
+		 	{
+		 		driver.switchTo().window(winHandle);
+		 	}
+		    for (String handle1 : driver.getWindowHandles())
+		    { 
+		    		driver.switchTo().window(handle1);
+		    }
+	}
+	
+	public void switchBack(WebDriver driver) {
+			String parent = driver.getWindowHandle();
+			System.out.println("Parent Window Handle: "+parent);
+			driver.switchTo().window(parent);
+			driver.switchTo().defaultContent();
 	}
 	
 	public void enterPaypalEmail(String email2) {

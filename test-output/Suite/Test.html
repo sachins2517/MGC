@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/6/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Dec 02 15:28:56 IST 2018</td>
+<td>Started on:</td><td>Mon Dec 10 08:09:15 EST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>178 seconds (178719 ms)</td>
+<tr><td>Total time:</td><td>162 seconds (162496 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,27 +75,75 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='script.Others_Reg_TC6.testA()'><b>testA</b><br>Test class: script.Others_Reg_TC6<br/>
-<a href="#Output-1454171136" onClick='toggleBox("Output-1454171136", this, "Show output", "Hide output");'>Show output</a>
+<td title='script.PaymentWithPaypal_TC8.testA()'><b>testA</b><br>Test class: script.PaymentWithPaypal_TC8<br/>
+<a href="#Output-2017860548" onClick='toggleBox("Output-2017860548", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1454171136" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1454171136">
+<a href="#Output-2017860548" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2017860548">
+Payment Section is displayed.<br/>
+Both prices are equal.<br/>
 Test: testA is Fail<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: null
-	at page.RegisterPage.checkForRegSuccess(RegisterPage.java:232)
-	at script.Others_Reg_TC6.testA(Others_Reg_TC6.java:31)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1454171136", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1454171136'><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.fail(Assert.java:101)
-	at page.RegisterPage.checkForRegSuccess(RegisterPage.java:232)
-	at script.Others_Reg_TC6.testA(Others_Reg_TC6.java:31)
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.44.609545 (c2f88692e98ce7233d2df7c724465ecacfe74df5),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;BTC-Mac.local&apos;, ip: &apos;fe80:0:0:0:9d:3c8:6018:eff0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/ty/3vsm8cdd1ss...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57856}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: cd696dfad9eafaa6c7d599ad05240a34
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at page.PaymentPage.clickPayPal(PaymentPage.java:201)
+	at script.PaymentWithPaypal_TC8.testA(PaymentWithPaypal_TC8.java:35)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2017860548", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2017860548'><pre>org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.44.609545 (c2f88692e98ce7233d2df7c724465ecacfe74df5),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;BTC-Mac.local&apos;, ip: &apos;fe80:0:0:0:9d:3c8:6018:eff0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/ty/3vsm8cdd1ss...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57856}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: cd696dfad9eafaa6c7d599ad05240a34
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at page.PaymentPage.clickPayPal(PaymentPage.java:201)
+	at script.PaymentWithPaypal_TC8.testA(PaymentWithPaypal_TC8.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
@@ -113,265 +161,34 @@ Test: testA is Fail<br/>
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
 	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>8</td>
-<td>script.Others_Reg_TC6@475530b9</td></tr>
-<tr>
-<td title='script.Invalid_Email_TC2.testA()'><b>testA</b><br>Test class: script.Invalid_Email_TC2<br/>
-<a href="#Output-677317086" onClick='toggleBox("Output-677317086", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-677317086" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-677317086">
-Test: testA is Fail<br/>
-</div>
-</td>
-<td><div><pre>java.lang.NullPointerException
-	at org.openqa.selenium.support.ui.ExpectedConditions$12.apply(ExpectedConditions.java:355)
-	at org.openqa.selenium.support.ui.ExpectedConditions$12.apply(ExpectedConditions.java:350)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	at page.RegisterPage.waitForAccessCodePageLoad(RegisterPage.java:193)
-	at script.Invalid_Email_TC2.testA(Invalid_Email_TC2.java:39)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace677317086", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace677317086'><pre>java.lang.NullPointerException
-	at org.openqa.selenium.support.ui.ExpectedConditions$12.apply(ExpectedConditions.java:355)
-	at org.openqa.selenium.support.ui.ExpectedConditions$12.apply(ExpectedConditions.java:350)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	at page.RegisterPage.waitForAccessCodePageLoad(RegisterPage.java:193)
-	at script.Invalid_Email_TC2.testA(Invalid_Email_TC2.java:39)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-</pre></div></td>
-<td>16</td>
-<td>script.Invalid_Email_TC2@1d057a39</td></tr>
-<tr>
-<td title='script.Clinician_Reg_TC4.testA()'><b>testA</b><br>Test class: script.Clinician_Reg_TC4<br/>
-<a href="#Output-1082528716" onClick='toggleBox("Output-1082528716", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1082528716" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1082528716">
-Test: testA is Fail<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: null
-	at page.RegisterPage.checkForRegSuccess(RegisterPage.java:232)
-	at script.Clinician_Reg_TC4.testA(Clinician_Reg_TC4.java:32)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1082528716", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1082528716'><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.fail(Assert.java:101)
-	at page.RegisterPage.checkForRegSuccess(RegisterPage.java:232)
-	at script.Clinician_Reg_TC4.testA(Clinician_Reg_TC4.java:32)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-</pre></div></td>
-<td>10</td>
-<td>script.Clinician_Reg_TC4@26be92ad</td></tr>
-<tr>
-<td title='script.LabAdmin_Reg_TC5.testA()'><b>testA</b><br>Test class: script.LabAdmin_Reg_TC5<br/>
-<a href="#Output-1924802798" onClick='toggleBox("Output-1924802798", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1924802798" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1924802798">
-Test: testA is Fail<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: null
-	at page.RegisterPage.checkForRegSuccess(RegisterPage.java:232)
-	at script.LabAdmin_Reg_TC5.testA(LabAdmin_Reg_TC5.java:31)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1924802798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1924802798'><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.fail(Assert.java:101)
-	at page.RegisterPage.checkForRegSuccess(RegisterPage.java:232)
-	at script.LabAdmin_Reg_TC5.testA(LabAdmin_Reg_TC5.java:31)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-</pre></div></td>
-<td>8</td>
-<td>script.LabAdmin_Reg_TC5@4c70fda8</td></tr>
+<td>62</td>
+<td>script.PaymentWithPaypal_TC8@8bd1b6a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='script.Valid_Email_TC1.testA()'><b>testA</b><br>Test class: script.Valid_Email_TC1<br/>
-<a href="#Output-455726379" onClick='toggleBox("Output-455726379", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-73698537" onClick='toggleBox("Output-73698537", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-455726379" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-455726379">
-Test: testA is Fail<br/>
+<a href="#Output-73698537" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-73698537">
+Access Code Page is Displayed.<br/>
+Payment Section is displayed.<br/>
+Test: testA is Pass<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;Welcome to My Gene Counsel!&apos;) to be present in element [[ChromeDriver: chrome on XP (a6016e4880052c3ee803dbaa58bb7e17)] -&gt; xpath: //div[@class=&apos;login__title&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;SACHIN&apos;, ip: &apos;10.101.84.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\Sachin\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52014}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: a6016e4880052c3ee803dbaa58bb7e17
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at page.RegisterPage.waitForAccessCodePageLoad(RegisterPage.java:193)
-	at script.Valid_Email_TC1.testA(Valid_Email_TC1.java:42)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace455726379", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace455726379'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;Welcome to My Gene Counsel!&apos;) to be present in element [[ChromeDriver: chrome on XP (a6016e4880052c3ee803dbaa58bb7e17)] -&gt; xpath: //div[@class=&apos;login__title&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;SACHIN&apos;, ip: &apos;10.101.84.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\Sachin\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52014}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: a6016e4880052c3ee803dbaa58bb7e17
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at page.RegisterPage.waitForAccessCodePageLoad(RegisterPage.java:193)
-	at script.Valid_Email_TC1.testA(Valid_Email_TC1.java:42)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-</pre></div></td>
-<td>20</td>
-<td>script.Valid_Email_TC1@224edc67</td></tr>
-<tr>
-<td title='script.RegisterAfterSignout_TC3.testA()'><b>testA</b><br>Test class: script.RegisterAfterSignout_TC3<br/>
-<a href="#Output-1969969319" onClick='toggleBox("Output-1969969319", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1969969319" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1969969319">
-Test: testA is Fail<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;Welcome to My Gene Counsel!&apos;) to be present in element [[ChromeDriver: chrome on XP (ba0c5ad6b4da77865532cf4b1c860331)] -&gt; xpath: //div[@class=&apos;login__title&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;SACHIN&apos;, ip: &apos;10.101.84.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\Sachin\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52078}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: ba0c5ad6b4da77865532cf4b1c860331
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at page.RegisterPage.waitForAccessCodePageLoad(RegisterPage.java:193)
-	at script.RegisterAfterSignout_TC3.testA(RegisterAfterSignout_TC3.java:31)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1969969319", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1969969319'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;Welcome to My Gene Counsel!&apos;) to be present in element [[ChromeDriver: chrome on XP (ba0c5ad6b4da77865532cf4b1c860331)] -&gt; xpath: //div[@class=&apos;login__title&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;SACHIN&apos;, ip: &apos;10.101.84.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\Sachin\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52078}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: ba0c5ad6b4da77865532cf4b1c860331
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at page.RegisterPage.waitForAccessCodePageLoad(RegisterPage.java:193)
-	at script.RegisterAfterSignout_TC3.testA(RegisterAfterSignout_TC3.java:31)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-</pre></div></td>
-<td>14</td>
-<td>script.RegisterAfterSignout_TC3@14acaea5</td></tr>
+<td></td>
+<td>55</td>
+<td>script.Valid_Email_TC1@55f3ddb1</td></tr>
 </table><p>
 </body>
 </html>

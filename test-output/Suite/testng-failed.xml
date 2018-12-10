@@ -1,62 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="ip" value="localhost"/>
-  <parameter name="browser" value="chrome"/>
-  <test name="Test">
+  <test thread-count="5" name="Test">
     <classes>
-      <class name="script.Others_Reg_TC6"/>
-      <class name="script.Invalid_Email_TC2"/>
-      <class name="script.Clinician_Reg_TC4"/>
-      <class name="script.LabAdmin_Reg_TC5"/>
       <class name="script.Valid_Email_TC1"/>
-      <class name="script.RegisterAfterSignout_TC3"/>
+      <class name="script.PaymentWithPaypal_TC8"/>
     </classes>
   </test> <!-- Test -->
   <test name="Test(failed)">
     <classes>
+      <class name="script.PaymentWithPaypal_TC8">
+        <methods>
+          <include name="testA"/>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.PaymentWithPaypal_TC8 -->
       <class name="script.Valid_Email_TC1">
         <methods>
           <include name="openApp"/>
-          <include name="testA"/>
           <include name="closeApp"/>
         </methods>
       </class> <!-- script.Valid_Email_TC1 -->
-      <class name="script.Others_Reg_TC6">
-        <methods>
-          <include name="openApp"/>
-          <include name="testA"/>
-          <include name="closeApp"/>
-        </methods>
-      </class> <!-- script.Others_Reg_TC6 -->
-      <class name="script.RegisterAfterSignout_TC3">
-        <methods>
-          <include name="openApp"/>
-          <include name="testA"/>
-          <include name="closeApp"/>
-        </methods>
-      </class> <!-- script.RegisterAfterSignout_TC3 -->
-      <class name="script.LabAdmin_Reg_TC5">
-        <methods>
-          <include name="openApp"/>
-          <include name="testA"/>
-          <include name="closeApp"/>
-        </methods>
-      </class> <!-- script.LabAdmin_Reg_TC5 -->
-      <class name="script.Clinician_Reg_TC4">
-        <methods>
-          <include name="openApp"/>
-          <include name="testA"/>
-          <include name="closeApp"/>
-        </methods>
-      </class> <!-- script.Clinician_Reg_TC4 -->
-      <class name="script.Invalid_Email_TC2">
-        <methods>
-          <include name="openApp"/>
-          <include name="testA"/>
-          <include name="closeApp"/>
-        </methods>
-      </class> <!-- script.Invalid_Email_TC2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

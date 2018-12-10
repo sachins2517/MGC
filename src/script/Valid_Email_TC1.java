@@ -43,8 +43,8 @@ public class Valid_Email_TC1 extends BaseTest {
 		//Thread.sleep(3000);
 		reg.waitForAccessCodePageLoad(driver);
 		reg.checkForAccessCodePage();
-		System.out.println("Checking for access code presence");
-		Thread.sleep(20000);
+		System.out.println("Waiting for access code to be entered by the user manually.");
+		Thread.sleep(30000);
 		access.clickSubmit();
 		//reg.checkForPaymentPage();	
 		pay.checkPaymentSection();

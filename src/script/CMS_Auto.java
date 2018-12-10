@@ -11,8 +11,8 @@ public class CMS_Auto extends BaseTest1{
 	@Test
 	public void creationOfDDM() throws InterruptedException {
 		
-		String fname = Utility.getXLData(DATA_PATH, "Sheet1", 6, 0);
-		String password = Utility.getXLData(DATA_PATH, "Sheet1", 6, 1);
+		String fname = Utility.getXLData(DATA_PATH, "Sheet1", 9, 0);
+		String password = Utility.getXLData(DATA_PATH, "Sheet1", 9, 1);
 		
 		CMSPage cms = new CMSPage(driver);
 		cms.sendUsername(fname);
