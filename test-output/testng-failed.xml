@@ -1,9 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test verbose="2" name="Default test">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
     <classes>
+      <class name="script.Valid_Email_TC1"/>
+      <class name="script.Invalid_Email_TC2"/>
+      <class name="script.RegisterAfterSignout_TC3"/>
+      <class name="script.Clinician_Reg_TC4"/>
+      <class name="script.LabAdmin_Reg_TC5"/>
+      <class name="script.Others_Reg_TC6"/>
+      <class name="script.PaymentWithCard_TC7"/>
       <class name="script.PaymentWithPaypal_TC8"/>
+      <class name="script.CMS_Auto"/>
+      <class name="script.Create_LLR_Request_TC9"/>
+      <class name="script.Create_LLR_Request_JPG_TC10"/>
+      <class name="script.Create_LLR_Request_PNG_TC11"/>
+      <class name="script.Create_LLR_Request_PDF_TC12"/>
+      <class name="script.View_LLR_List_TC13"/>
     </classes>
-  </test> <!-- Default test -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="script.CMS_Auto">
+        <methods>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.CMS_Auto -->
+      <class name="script.Create_LLR_Request_JPG_TC10">
+        <methods>
+          <include name="openApp"/>
+          <include name="create_LLR_jpg"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.Create_LLR_Request_JPG_TC10 -->
+      <class name="script.Create_LLR_Request_PNG_TC11">
+        <methods>
+          <include name="openApp"/>
+          <include name="create_LLR_png"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.Create_LLR_Request_PNG_TC11 -->
+      <class name="script.Others_Reg_TC6">
+        <methods>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.Others_Reg_TC6 -->
+      <class name="script.LabAdmin_Reg_TC5">
+        <methods>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.LabAdmin_Reg_TC5 -->
+      <class name="script.PaymentWithCard_TC7">
+        <methods>
+          <include name="openApp"/>
+          <include name="paymentWithCard"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.PaymentWithCard_TC7 -->
+      <class name="script.View_LLR_List_TC13">
+        <methods>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.View_LLR_List_TC13 -->
+      <class name="script.Invalid_Email_TC2">
+        <methods>
+          <include name="openApp"/>
+          <include name="invalidEmail"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.Invalid_Email_TC2 -->
+      <class name="script.RegisterAfterSignout_TC3">
+        <methods>
+          <include name="openApp"/>
+          <include name="regAfterSignOut"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.RegisterAfterSignout_TC3 -->
+      <class name="script.Create_LLR_Request_TC9">
+        <methods>
+          <include name="openApp"/>
+          <include name="create_LLR_Request"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.Create_LLR_Request_TC9 -->
+      <class name="script.PaymentWithPaypal_TC8">
+        <methods>
+          <include name="openApp"/>
+          <include name="paymentWithPaypal"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.PaymentWithPaypal_TC8 -->
+      <class name="script.Valid_Email_TC1">
+        <methods>
+          <include name="validEmail"/>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.Valid_Email_TC1 -->
+      <class name="script.Create_LLR_Request_PDF_TC12">
+        <methods>
+          <include name="openApp"/>
+          <include name="create_LLR_pdf"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.Create_LLR_Request_PDF_TC12 -->
+      <class name="script.Clinician_Reg_TC4">
+        <methods>
+          <include name="openApp"/>
+          <include name="clinicianReg"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.Clinician_Reg_TC4 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

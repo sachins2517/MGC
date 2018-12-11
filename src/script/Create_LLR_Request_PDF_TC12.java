@@ -6,27 +6,40 @@ import generic.BaseTest;
 import generic.Utility;
 import page.LLR_Listing_Page;
 import page.LLR_RequestPage;
+import page.LoginPage;
 import page.RegisterPage;
 
 public class Create_LLR_Request_PDF_TC12 extends BaseTest{
 	
-	@Test
-	public void testA() throws InterruptedException {
+	@Test(priority=12)
+	public void create_LLR_pdf() throws InterruptedException {
 	
-		String labName = Utility.getXLData(DATA_PATH, "Sheet1", 8, 1);
-		String testType = Utility.getXLData(DATA_PATH, "Sheet1", 8, 2);
-		String subSpec = Utility.getXLData(DATA_PATH, "Sheet1", 8, 3);
-		String resType = Utility.getXLData(DATA_PATH, "Sheet1", 8, 4);
-		String genType = Utility.getXLData(DATA_PATH, "Sheet1", 8, 5);
-		String mutation = Utility.getXLData(DATA_PATH, "Sheet1", 8, 6);
-		String imgPath = Utility.getXLData(DATA_PATH, "Sheet1", 8, 9);
+		String labName = Utility.getXLData(DATA_PATH, "Sheet1", 12,0);
+		String testType = Utility.getXLData(DATA_PATH, "Sheet1", 12, 1);
+		String subSpec = Utility.getXLData(DATA_PATH, "Sheet1", 12, 2);
+		String resType = Utility.getXLData(DATA_PATH, "Sheet1", 12, 3);
+		String genType = Utility.getXLData(DATA_PATH, "Sheet1", 12, 4);
+		String mutation = Utility.getXLData(DATA_PATH, "Sheet1", 12, 5);
+		String email1 = Utility.getXLData(DATA_PATH, "Sheet1", 2, 0);
+		String password1 = Utility.getXLData(DATA_PATH, "Sheet1", 2, 1);
+		String imgPath = Utility.getXLData(DATA_PATH, "Sheet1", 12, 8);
 		
-		CMS_Auto c = new CMS_Auto();
-		c.creationOfDDM();
+		/*CMS_Auto c = new CMS_Auto();
+		c.creationOfDDM();*/
 		
 		LLR_RequestPage request = new LLR_RequestPage(driver);
 		RegisterPage reg = new RegisterPage(driver);
 		LLR_Listing_Page list = new LLR_Listing_Page(driver);
+		LoginPage login = new LoginPage(driver);
+		
+		login.loginLink();
+		login.email(email1);
+		login.password(password1);
+		login.signIn();
+		
+		list.clickRequest();
+		
+		
 		request.selectLabName(labName);
 		request.selectDate();
 		request.selectTestType(testType);
@@ -34,14 +47,14 @@ public class Create_LLR_Request_PDF_TC12 extends BaseTest{
 		request.selectResultType(resType);
 		request.selectgeneTestType(genType);
 		request.selectmutationName(mutation);
+		Thread.sleep(3000);
 		request.uploadFile(imgPath);
+		Thread.sleep(5000);
 		request.clickTerms();
 		reg.switchToMainPage(driver);
 		request.clickPrivacy();
 		reg.switchToMainPage(driver);
 		request.clickSubmit();
-		request.clickIDoNotHave();
-		request.clickSubmitBtn();
 		request.clickFinalSubmit();
 		list.clickOK();
 		list.checkListingPage();

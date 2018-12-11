@@ -8,14 +8,14 @@ import page.RegisterPage;
 
 public class LabAdmin_Reg_TC5 extends BaseTest {
 
-	@Test
-	public void testA() throws InterruptedException {
+	@Test(priority=5)
+	public void labAdminRegistration() throws InterruptedException {
 		
-		String fname = Utility.getXLData(DATA_PATH, "Sheet1", 0, 0);
-		String lname = Utility.getXLData(DATA_PATH, "Sheet1", 0, 1);
-		String email = Utility.getXLData(DATA_PATH, "Sheet1", 0, 2);
-		String orgname = Utility.getXLData(DATA_PATH, "Sheet1", 0, 5);
-		String message1 = Utility.getXLData(DATA_PATH, "Sheet1", 0, 6);
+		String fname = Utility.getXLData(DATA_PATH, "Sheet1", 15, 0);
+		String lname = Utility.getXLData(DATA_PATH, "Sheet1", 15, 1);
+		String email = Utility.getXLData(DATA_PATH, "Sheet1", 15, 2);
+		String orgname = Utility.getXLData(DATA_PATH, "Sheet1", 15, 5);
+		String message1 = Utility.getXLData(DATA_PATH, "Sheet1", 15, 6);
 		
 		RegisterPage reg = new RegisterPage(driver);
 		reg.setFirstName(fname);

@@ -8,8 +8,8 @@ import page.RegisterPage;
 
 public class Invalid_Email_TC2 extends BaseTest {
 
-	@Test
-	public void testA() throws InterruptedException {
+	@Test(priority=2)
+	public void invalidEmail() throws InterruptedException {
 		String fname = Utility.getXLData(DATA_PATH, "Sheet1", 0, 0);
 		String lname = Utility.getXLData(DATA_PATH, "Sheet1", 0, 1);
 		String email = Utility.getXLData(DATA_PATH, "Sheet1", 0, 2);

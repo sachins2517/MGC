@@ -10,8 +10,8 @@ import page.RegisterPage;
 
 public class Valid_Email_TC1 extends BaseTest {
 
-	@Test
-	public void testA() throws InterruptedException {
+	@Test(priority=1)
+	public void validEmail() throws InterruptedException {
 		
 		String fname = Utility.getXLData(DATA_PATH, "Sheet1", 0, 0);
 		String lname = Utility.getXLData(DATA_PATH, "Sheet1", 0, 1);

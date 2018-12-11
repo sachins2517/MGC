@@ -13,8 +13,8 @@ import page.RegisterPage;
 
 public class PaymentWithCard_TC7 extends BaseTest{
 	
-	@Test
-	public void testA() throws InterruptedException, AWTException {
+	@Test(priority=7)
+	public void paymentWithCard() throws InterruptedException, AWTException {
 		
 		String email1 = Utility.getXLData(DATA_PATH, "Sheet1", 0, 2);
 		String password1 = Utility.getXLData(DATA_PATH, "Sheet1", 0, 3);

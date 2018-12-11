@@ -9,8 +9,8 @@ import page.RegisterPage;
 
 public class Clinician_Reg_TC4 extends BaseTest {
 
-	@Test
-	public void testA() throws InterruptedException {
+	@Test(priority=4)
+	public void clinicianReg() throws InterruptedException {
 		
 		String fname = Utility.getXLData(DATA_PATH, "Sheet1", 0, 0);
 		String lname = Utility.getXLData(DATA_PATH, "Sheet1", 0, 1);

@@ -9,8 +9,8 @@ import page.RegisterPage;
 
 public class RegisterAfterSignout_TC3 extends BaseTest {
 
-	@Test
-	public void testA() throws InterruptedException {
+	@Test(priority=3)
+	public void regAfterSignOut() throws InterruptedException {
 		
 		String fname = Utility.getXLData(DATA_PATH, "Sheet1", 0, 0);
 		String lname = Utility.getXLData(DATA_PATH, "Sheet1", 0, 1);

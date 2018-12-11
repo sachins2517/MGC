@@ -3,17 +3,30 @@ package script;
 import org.testng.annotations.Test;
 
 import generic.BaseTest;
+import generic.Utility;
 import page.LLR_Listing_Page;
 import page.LLR_RequestPage;
+import page.LoginPage;
 
 
 public class View_LLR_List_TC13 extends BaseTest{
 	
-	@Test
-	public void testA() throws InterruptedException {
+	@Test(priority=13)
+	public void view_LLR_List() throws InterruptedException {
+		
+		String email1 = Utility.getXLData(DATA_PATH, "Sheet1", 2, 0);
+		String password1 = Utility.getXLData(DATA_PATH, "Sheet1", 2, 1);
 	
 		LLR_Listing_Page list = new LLR_Listing_Page(driver);
 		LLR_RequestPage req = new LLR_RequestPage(driver);
+		LoginPage login = new LoginPage(driver);
+		
+		login.loginLink();
+		login.email(email1);
+		login.password(password1);
+		login.signIn();
+		
+		list.checkListingPage();
 		list.clickActionIcon();
 		list.clickViewRequest();
 		req.checkForEditing();	

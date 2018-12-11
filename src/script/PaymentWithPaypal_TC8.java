@@ -11,8 +11,8 @@ import page.RegisterPage;
 
 public class PaymentWithPaypal_TC8 extends BaseTest{
 	
-	@Test
-	public void testA() throws InterruptedException {
+	@Test(priority=8)
+	public void paymentWithPaypal() throws InterruptedException {
 	
 		String paypalemail = Utility.getXLData(DATA_PATH, "Sheet1", 6, 0);
 		String paypalpassword = Utility.getXLData(DATA_PATH, "Sheet1", 6, 1);

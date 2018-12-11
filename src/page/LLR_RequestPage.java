@@ -72,6 +72,9 @@ public class LLR_RequestPage {
     private WebElement geneType;
     
     @FindBy(id="mutationNameId0")
+    private WebElement mutationField;
+    
+    @FindBy(xpath="//li[@class='es-visible selected']")
     private WebElement mutationName;
     
     @FindBy(xpath="(//input[@name='imageFile'])[1]")
@@ -107,17 +110,17 @@ public class LLR_RequestPage {
     @FindBy(xpath="(//input[@id='inlineRadio6'])[1]")
     private WebElement clickIdoNotHave;
     
-    	@FindBy(xpath="(//input[@id='inlineRadio5'])[1]")
-    	private WebElement clickIHave;
+    @FindBy(xpath="(//input[@id='inlineRadio5'])[1]")
+    private WebElement clickIHave;
     	
-    	@FindBy(id="submit_btn")
-    	private WebElement submitBtn;
+    @FindBy(id="submit_btn")
+    private WebElement submitBtn;
     	
-    	@FindBy(xpath="(//button[@class='close close__ close_mb']/img)[1]")
-    	private WebElement closeBtn;
+    @FindBy(xpath="(//button[@class='close close__ close_mb']/img)[1]")
+    private WebElement closeBtn;
     	
     @FindBy(xpath="//button[@class='btn btn-primary']")
-    	private WebElement finalSubmit;
+    private WebElement finalSubmit;
     	
     @FindBy(xpath="//button[@class='btn btn-default']")
 	private WebElement finalCancel;
@@ -139,6 +142,10 @@ public class LLR_RequestPage {
 			labOption.click();
 			labName.sendKeys(labNam);
 		}
+	
+	public void selectDateField() {
+			date.click();
+	}
 	
 	public void selectDate() {
 			picktodaysdate.click();
@@ -169,9 +176,9 @@ public class LLR_RequestPage {
 	}
 	
 	public void selectmutationName(String mutation) {	
+			mutationField.click();
+			mutationField.sendKeys(mutation);
 			mutationName.click();
-			Select sel = new Select(mutationName);
-			sel.selectByVisibleText(mutation);
 	}
 	
 	public void uploadFile(String imgPath) {	
