@@ -43,12 +43,14 @@
       </class> <!-- script.Create_LLR_Request_PNG_TC11 -->
       <class name="script.Others_Reg_TC6">
         <methods>
+          <include name="otherRegistration"/>
           <include name="openApp"/>
           <include name="closeApp"/>
         </methods>
       </class> <!-- script.Others_Reg_TC6 -->
       <class name="script.LabAdmin_Reg_TC5">
         <methods>
+          <include name="labAdminRegistration"/>
           <include name="openApp"/>
           <include name="closeApp"/>
         </methods>
@@ -63,6 +65,7 @@
       <class name="script.View_LLR_List_TC13">
         <methods>
           <include name="openApp"/>
+          <include name="view_LLR_List"/>
           <include name="closeApp"/>
         </methods>
       </class> <!-- script.View_LLR_List_TC13 -->

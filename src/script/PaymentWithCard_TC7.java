@@ -42,9 +42,9 @@ public class PaymentWithCard_TC7 extends BaseTest{
 		reg.switchToMainPage(driver);
 		pay.clickPrivacy();
 		reg.switchToMainPage(driver);
-		Thread.sleep(8000);
+		Thread.sleep(5000);
 		pay.clickConfirmSubscription();
-		Thread.sleep(10000);
+		Thread.sleep(8000);
 		pay.verifyConfAmount();
 		pay.clickConfirm();
 		req.checkRequestPage();

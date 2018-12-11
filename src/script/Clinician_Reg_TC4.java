@@ -12,11 +12,11 @@ public class Clinician_Reg_TC4 extends BaseTest {
 	@Test(priority=4)
 	public void clinicianReg() throws InterruptedException {
 		
-		String fname = Utility.getXLData(DATA_PATH, "Sheet1", 0, 0);
-		String lname = Utility.getXLData(DATA_PATH, "Sheet1", 0, 1);
-		String email = Utility.getXLData(DATA_PATH, "Sheet1", 0, 2);
-		String orgname = Utility.getXLData(DATA_PATH, "Sheet1", 0, 5);
-		String message1 = Utility.getXLData(DATA_PATH, "Sheet1", 0, 6);
+		String fname = Utility.getXLData(DATA_PATH, "Sheet1", 17, 0);
+		String lname = Utility.getXLData(DATA_PATH, "Sheet1", 17, 1);
+		String email = Utility.getXLData(DATA_PATH, "Sheet1", 17, 2);
+		String orgname = Utility.getXLData(DATA_PATH, "Sheet1", 17, 5);
+		String message1 = Utility.getXLData(DATA_PATH, "Sheet1", 17, 6);
 		
 		RegisterPage reg = new RegisterPage(driver);
 		reg.setFirstName(fname);

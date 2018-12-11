@@ -16,8 +16,8 @@ public class PaymentWithPaypal_TC8 extends BaseTest{
 	
 		String paypalemail = Utility.getXLData(DATA_PATH, "Sheet1", 6, 0);
 		String paypalpassword = Utility.getXLData(DATA_PATH, "Sheet1", 6, 1);
-		String loginUsername = Utility.getXLData(DATA_PATH, "Sheet1", 0, 2);
-		String loginPassword = Utility.getXLData(DATA_PATH, "Sheet1", 0, 3);
+		String loginUsername = Utility.getXLData(DATA_PATH, "Sheet1", 20, 0);
+		String loginPassword = Utility.getXLData(DATA_PATH, "Sheet1", 20, 1);
 		
 		//Valid_Email_TC1 registration = new Valid_Email_TC1();
 		PaymentPage pay = new PaymentPage(driver);

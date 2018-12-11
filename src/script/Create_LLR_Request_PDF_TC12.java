@@ -41,6 +41,7 @@ public class Create_LLR_Request_PDF_TC12 extends BaseTest{
 		
 		
 		request.selectLabName(labName);
+		request.selectDateField();
 		request.selectDate();
 		request.selectTestType(testType);
 		request.selectSubSpeciality(subSpec);

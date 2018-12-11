@@ -39,6 +39,7 @@ public class Create_LLR_Request_PNG_TC11 extends BaseTest{
 		
 		list.clickRequest();
 		request.selectLabName(labName);
+		request.selectDateField();
 		request.selectDate();
 		request.selectTestType(testType);
 		request.selectSubSpeciality(subSpec);

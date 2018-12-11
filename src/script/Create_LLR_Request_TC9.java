@@ -46,11 +46,12 @@ public class Create_LLR_Request_TC9 extends BaseTest{
 		request.selectResultType(resType);
 		request.selectgeneTestType(genType);
 		request.selectmutationName(mutation);
-		Thread.sleep(5000);
+		Thread.sleep(6000);
 		request.clickTerms();
 		reg.switchToMainPage(driver);
 		request.clickPrivacy();
 		reg.switchToMainPage(driver);
+		Thread.sleep(6000);
 		request.clickSubmit();
 		request.clickIDoNotHave();
 		request.clickSubmitBtn();
