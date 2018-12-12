@@ -4,6 +4,7 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -269,5 +270,12 @@ public class PaymentPage {
 	
 	public void clickConfirmSubscription() {
 			confirmSubBtn.click();
-	}	
+	}
+	
+	public void scrollToSubmit(WebDriver driver) throws AWTException
+	{	
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView();", confirmSubBtn);
+		
+	}
 }

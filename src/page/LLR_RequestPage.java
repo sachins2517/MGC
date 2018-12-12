@@ -4,6 +4,7 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -247,11 +248,18 @@ public class LLR_RequestPage {
 			logout.click();
 	}
 	
-	public void downKeys() throws AWTException
-	{
-		Robot r=new Robot();
-		r.keyPress(KeyEvent.VK_DOWN);
-		r.keyRelease(KeyEvent.VK_DOWN);
+	public void downKeys(WebDriver driver) throws AWTException
+	{	
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView();", geneType);
+		
+	}
+	
+	public void downToSubmit(WebDriver driver) throws AWTException
+	{	
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView();", submit);
+		
 	}
 	
 }

@@ -1,5 +1,7 @@
 package script;
 
+import java.awt.AWTException;
+
 import org.testng.annotations.Test;
 
 import generic.BaseTest;
@@ -12,7 +14,7 @@ import page.RegisterPage;
 public class Create_LLR_Request_TC9 extends BaseTest{
 	
 	@Test(priority=9)
-	public void create_LLR_Request() throws InterruptedException {
+	public void create_LLR_Request() throws InterruptedException, AWTException {
 	
 		String labName = Utility.getXLData(DATA_PATH, "Sheet1", 12,0);
 		String testType = Utility.getXLData(DATA_PATH, "Sheet1", 12, 1);
@@ -23,9 +25,6 @@ public class Create_LLR_Request_TC9 extends BaseTest{
 		String email1 = Utility.getXLData(DATA_PATH, "Sheet1", 2, 0);
 		String password1 = Utility.getXLData(DATA_PATH, "Sheet1", 2, 1);
 		//String imgPath = Utility.getXLData(DATA_PATH, "Sheet1", 8, 7);
-		
-		/*CMS_Auto c = new CMS_Auto();
-		c.creationOfDDM();*/
 		
 		LLR_RequestPage request = new LLR_RequestPage(driver);
 		RegisterPage reg = new RegisterPage(driver);
@@ -44,9 +43,12 @@ public class Create_LLR_Request_TC9 extends BaseTest{
 		request.selectTestType(testType);
 		request.selectSubSpeciality(subSpec);
 		request.selectResultType(resType);
+		Thread.sleep(2000);
+		request.downKeys(driver);
 		request.selectgeneTestType(genType);
 		request.selectmutationName(mutation);
-		Thread.sleep(6000);
+		Thread.sleep(5000);
+		request.downToSubmit(driver);
 		request.clickTerms();
 		reg.switchToMainPage(driver);
 		request.clickPrivacy();

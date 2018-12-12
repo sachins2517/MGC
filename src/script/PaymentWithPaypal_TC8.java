@@ -1,5 +1,7 @@
 package script;
 
+import java.awt.AWTException;
+
 import org.testng.annotations.Test;
 
 import generic.BaseTest;
@@ -12,7 +14,7 @@ import page.RegisterPage;
 public class PaymentWithPaypal_TC8 extends BaseTest{
 	
 	@Test(priority=8)
-	public void paymentWithPaypal() throws InterruptedException {
+	public void paymentWithPaypal() throws InterruptedException, AWTException {
 	
 		String paypalemail = Utility.getXLData(DATA_PATH, "Sheet1", 6, 0);
 		String paypalpassword = Utility.getXLData(DATA_PATH, "Sheet1", 6, 1);
@@ -48,6 +50,8 @@ public class PaymentWithPaypal_TC8 extends BaseTest{
 		
 		pay.switchBack(driver);
 		pay.checkPaymentSection();
+		Thread.sleep(2000);
+		pay.scrollToSubmit(driver);
 		pay.clickTerms();
 		reg.switchToMainPage(driver);
 		pay.clickPrivacy();

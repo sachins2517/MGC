@@ -36,7 +36,7 @@ public class Invalid_Email_TC2 extends BaseTest {
 		reg.switchToMainPage(driver);
 		reg.clickRegisterPatient();
 		//Thread.sleep(3000);
-		reg.waitForAccessCodePageLoad(driver);
+		//reg.waitForAccessCodePageLoad(driver);
 		reg.checkForAccCodeAfterInvalidEmailID();
 	}
 }

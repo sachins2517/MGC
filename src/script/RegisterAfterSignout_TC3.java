@@ -14,10 +14,10 @@ public class RegisterAfterSignout_TC3 extends BaseTest {
 		
 		String fname = Utility.getXLData(DATA_PATH, "Sheet1", 0, 0);
 		String lname = Utility.getXLData(DATA_PATH, "Sheet1", 0, 1);
-		String email = Utility.getXLData(DATA_PATH, "Sheet1", 0, 2);
+		String email = Utility.getXLData(DATA_PATH, "Sheet1", 1, 2);
 		String pw = Utility.getXLData(DATA_PATH, "Sheet1", 0, 3);
 		String confirmpwd = Utility.getXLData(DATA_PATH, "Sheet1", 0, 4);
-		String email1 = Utility.getXLData(DATA_PATH, "Sheet1", 1, 2);
+		String email1 = Utility.getXLData(DATA_PATH, "Sheet1", 1, 6);
 		
 		RegisterPage reg = new RegisterPage(driver);
 		AccessCodePage access = new AccessCodePage(driver);

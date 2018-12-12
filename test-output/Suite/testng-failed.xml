@@ -30,14 +30,12 @@
       <class name="script.Create_LLR_Request_JPG_TC10">
         <methods>
           <include name="openApp"/>
-          <include name="create_LLR_jpg"/>
           <include name="closeApp"/>
         </methods>
       </class> <!-- script.Create_LLR_Request_JPG_TC10 -->
       <class name="script.Create_LLR_Request_PNG_TC11">
         <methods>
           <include name="openApp"/>
-          <include name="create_LLR_png"/>
           <include name="closeApp"/>
         </methods>
       </class> <!-- script.Create_LLR_Request_PNG_TC11 -->
@@ -53,18 +51,19 @@
           <include name="closeApp"/>
         </methods>
       </class> <!-- script.LabAdmin_Reg_TC5 -->
+      <class name="script.PaymentWithCard_TC7">
+        <methods>
+          <include name="openApp"/>
+          <include name="paymentWithCard"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.PaymentWithCard_TC7 -->
       <class name="script.View_LLR_List_TC13">
         <methods>
           <include name="openApp"/>
           <include name="closeApp"/>
         </methods>
       </class> <!-- script.View_LLR_List_TC13 -->
-      <class name="script.PaymentWithCard_TC7">
-        <methods>
-          <include name="openApp"/>
-          <include name="closeApp"/>
-        </methods>
-      </class> <!-- script.PaymentWithCard_TC7 -->
       <class name="script.Invalid_Email_TC2">
         <methods>
           <include name="openApp"/>
@@ -89,12 +88,12 @@
       <class name="script.PaymentWithPaypal_TC8">
         <methods>
           <include name="openApp"/>
-          <include name="paymentWithPaypal"/>
           <include name="closeApp"/>
         </methods>
       </class> <!-- script.PaymentWithPaypal_TC8 -->
       <class name="script.Valid_Email_TC1">
         <methods>
+          <include name="validEmail"/>
           <include name="openApp"/>
           <include name="closeApp"/>
         </methods>
@@ -102,7 +101,6 @@
       <class name="script.Create_LLR_Request_PDF_TC12">
         <methods>
           <include name="openApp"/>
-          <include name="create_LLR_pdf"/>
           <include name="closeApp"/>
         </methods>
       </class> <!-- script.Create_LLR_Request_PDF_TC12 -->

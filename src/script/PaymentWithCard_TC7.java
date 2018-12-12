@@ -38,6 +38,7 @@ public class PaymentWithCard_TC7 extends BaseTest{
 		Thread.sleep(5000);
 		pay.enterExpiry(driver, expiry);
 		Thread.sleep(5000);
+		pay.scrollToSubmit(driver);
 		pay.clickTerms();
 		reg.switchToMainPage(driver);
 		pay.clickPrivacy();
