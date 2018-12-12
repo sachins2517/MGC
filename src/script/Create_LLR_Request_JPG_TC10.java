@@ -1,5 +1,9 @@
 package script;
 
+import java.awt.AWTException;
+import java.awt.event.KeyEvent;
+import java.io.File;
+
 import org.testng.annotations.Test;
 
 import generic.BaseTest;
@@ -12,7 +16,7 @@ import page.RegisterPage;
 public class Create_LLR_Request_JPG_TC10 extends BaseTest{
 	
 	@Test(priority=10)
-	public void create_LLR_jpg() throws InterruptedException {
+	public void create_LLR_jpg() throws InterruptedException, AWTException {
 	
 		String labName = Utility.getXLData(DATA_PATH, "Sheet1", 12,0);
 		String testType = Utility.getXLData(DATA_PATH, "Sheet1", 12, 1);
@@ -23,9 +27,11 @@ public class Create_LLR_Request_JPG_TC10 extends BaseTest{
 		String email1 = Utility.getXLData(DATA_PATH, "Sheet1", 2, 0);
 		String password1 = Utility.getXLData(DATA_PATH, "Sheet1", 2, 1);
 		String imgPath = Utility.getXLData(DATA_PATH, "Sheet1", 12, 6);
+		//String imgPath1 = Utility.getXLData(DATA_PATH, "Sheet1", 12, 9);
 		
-		/*CMS_Auto c = new CMS_Auto();
-		c.creationOfDDM();*/
+		/*String path = imgPath;
+		String base = imgPath1;
+		String relative = new File(base).toURI().relativize(new File(path).toURI()).getPath();*/
 		
 		LLR_RequestPage request = new LLR_RequestPage(driver);
 		RegisterPage reg = new RegisterPage(driver);
@@ -43,8 +49,17 @@ public class Create_LLR_Request_JPG_TC10 extends BaseTest{
 		request.selectDate();
 		request.selectTestType(testType);
 		request.selectSubSpeciality(subSpec);
+		Thread.sleep(2000);
+		request.downKeys();
+		request.downKeys();
+		Thread.sleep(2000);
 		request.selectResultType(resType);
+		Thread.sleep(2000);
 		request.selectgeneTestType(genType);
+		Thread.sleep(3000);
+		request.downKeys();
+		request.downKeys();
+		Thread.sleep(3000);
 		request.selectmutationName(mutation);
 		Thread.sleep(3000);
 		request.uploadFile(imgPath);

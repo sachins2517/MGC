@@ -178,14 +178,18 @@ public void checkForAccessCodePage() {
 			Reporter.log("Access Code Page is Displayed.", true);
 		else
 		{
-//			String actual = successmsg.getText();
-//			String expected= "Account has been created successfully!";
-//			SoftAssert a = new SoftAssert();
-//			a.assertEquals(actual, expected);
-//			Reporter.log("Failed", true);
 			Assert.fail();
 		}
 	}
+
+public void checkForAccCodeAfterInvalidEmailID() {
+	if(successmsg.isDisplayed())
+			Assert.fail();
+	else
+	{
+		Reporter.log("Did not go to next page and error message is displayed for duplication of email id.", true);
+	}
+}
 
 public void waitForAccessCodePageLoad(WebDriver driver) {
 		WebDriverWait wt = new WebDriverWait(driver,10);
