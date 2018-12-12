@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="5" total="14" passed="9">
+<testng-results skipped="0" failed="2" total="14" passed="12">
   <reporter-output>
     <line>
       <![CDATA[Access Code Page is Displayed.]]>
     </line>
     <line>
-      <![CDATA[Test: validEmail is Fail]]>
+      <![CDATA[Payment Section is displayed.]]>
     </line>
     <line>
-      <![CDATA[TestName: validEmail Status: Fail]]>
+      <![CDATA[Test: validEmail is Pass]]>
     </line>
     <line>
-      <![CDATA[PHOTO: ./photo/Wed Dec 12 03_07_48 EST 2018.png]]>
+      <![CDATA[TestName: validEmail Status: Pass]]>
     </line>
     <line>
-      <![CDATA[Test: invalidEmail is Fail]]>
+      <![CDATA[Did not go to next page and error message is displayed for duplication of email id.]]>
     </line>
     <line>
-      <![CDATA[TestName: invalidEmail Status: Fail]]>
+      <![CDATA[Test: invalidEmail is Pass]]>
     </line>
     <line>
-      <![CDATA[PHOTO: ./photo/Wed Dec 12 03_08_18 EST 2018.png]]>
+      <![CDATA[TestName: invalidEmail Status: Pass]]>
     </line>
     <line>
-      <![CDATA[Test: regAfterSignOut is Fail]]>
+      <![CDATA[Access Code Page is Displayed.]]>
     </line>
     <line>
-      <![CDATA[TestName: regAfterSignOut Status: Fail]]>
+      <![CDATA[Access Code Page is Displayed.]]>
     </line>
     <line>
-      <![CDATA[PHOTO: ./photo/Wed Dec 12 03_08_38 EST 2018.png]]>
+      <![CDATA[Test: regAfterSignOut is Pass]]>
+    </line>
+    <line>
+      <![CDATA[TestName: regAfterSignOut Status: Pass]]>
     </line>
     <line>
       <![CDATA[Submitted Successfully.]]>
@@ -41,31 +44,40 @@
       <![CDATA[TestName: clinicianReg Status: Pass]]>
     </line>
     <line>
-      <![CDATA[Submitted Successfully.]]>
+      <![CDATA[Test: labAdminRegistration is Fail]]>
     </line>
     <line>
-      <![CDATA[Test: labAdminRegistration is Pass]]>
+      <![CDATA[TestName: labAdminRegistration Status: Fail]]>
     </line>
     <line>
-      <![CDATA[TestName: labAdminRegistration Status: Pass]]>
+      <![CDATA[PHOTO: ./photo/Wed Dec 12 06_08_29 EST 2018.png]]>
     </line>
     <line>
-      <![CDATA[Submitted Successfully.]]>
+      <![CDATA[Test: otherRegistration is Fail]]>
     </line>
     <line>
-      <![CDATA[Test: otherRegistration is Pass]]>
+      <![CDATA[TestName: otherRegistration Status: Fail]]>
     </line>
     <line>
-      <![CDATA[TestName: otherRegistration Status: Pass]]>
+      <![CDATA[PHOTO: ./photo/Wed Dec 12 06_08_46 EST 2018.png]]>
     </line>
     <line>
-      <![CDATA[Test: paymentWithCard is Fail]]>
+      <![CDATA[Payment Section is displayed.]]>
     </line>
     <line>
-      <![CDATA[TestName: paymentWithCard Status: Fail]]>
+      <![CDATA[Both prices are equal.]]>
     </line>
     <line>
-      <![CDATA[PHOTO: ./photo/Wed Dec 12 03_10_06 EST 2018.png]]>
+      <![CDATA[Total amount and payable amount are same.]]>
+    </line>
+    <line>
+      <![CDATA[Payment is confirmed and in request creation page.]]>
+    </line>
+    <line>
+      <![CDATA[Test: paymentWithCard is Pass]]>
+    </line>
+    <line>
+      <![CDATA[TestName: paymentWithCard Status: Pass]]>
     </line>
     <line>
       <![CDATA[Payment Section is displayed.]]>
@@ -95,13 +107,13 @@
       <![CDATA[TestName: creationOfDDM Status: Pass]]>
     </line>
     <line>
-      <![CDATA[Test: create_LLR_Request is Fail]]>
+      <![CDATA[LLR Request List Page is displayed.]]>
     </line>
     <line>
-      <![CDATA[TestName: create_LLR_Request Status: Fail]]>
+      <![CDATA[Test: create_LLR_Request is Pass]]>
     </line>
     <line>
-      <![CDATA[PHOTO: ./photo/Wed Dec 12 03_13_58 EST 2018.png]]>
+      <![CDATA[TestName: create_LLR_Request Status: Pass]]>
     </line>
     <line>
       <![CDATA[LLR Request List Page is displayed.]]>
@@ -143,12 +155,12 @@
       <![CDATA[TestName: view_LLR_List Status: Pass]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="700165" started-at="2018-12-12T08:06:42Z" finished-at="2018-12-12T08:18:22Z">
+  <suite name="Suite" duration-ms="980964" started-at="2018-12-12T11:05:52Z" finished-at="2018-12-12T11:22:12Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="700165" started-at="2018-12-12T08:06:42Z" finished-at="2018-12-12T08:18:22Z">
+    <test name="Test" duration-ms="980964" started-at="2018-12-12T11:05:52Z" finished-at="2018-12-12T11:22:12Z">
       <class name="script.Clinician_Reg_TC4">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Clinician_Reg_TC4@523884b2]" name="openApp" is-config="true" duration-ms="9133" started-at="2018-12-12T03:08:38Z" finished-at="2018-12-12T03:08:48Z">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Clinician_Reg_TC4@523884b2]" name="openApp" is-config="true" duration-ms="8326" started-at="2018-12-12T06:07:50Z" finished-at="2018-12-12T06:07:59Z">
           <params>
             <param index="0">
               <value>
@@ -164,7 +176,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="clinicianReg()[pri:4, instance:script.Clinician_Reg_TC4@523884b2]" name="clinicianReg" duration-ms="14542" started-at="2018-12-12T03:08:48Z" finished-at="2018-12-12T03:09:02Z">
+        <test-method status="PASS" signature="clinicianReg()[pri:4, instance:script.Clinician_Reg_TC4@523884b2]" name="clinicianReg" duration-ms="18492" started-at="2018-12-12T06:07:59Z" finished-at="2018-12-12T06:08:17Z">
           <reporter-output>
             <line>
               <![CDATA[Submitted Successfully.]]>
@@ -174,7 +186,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- clinicianReg -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Clinician_Reg_TC4@523884b2]" name="closeApp" is-config="true" duration-ms="263" started-at="2018-12-12T03:09:02Z" finished-at="2018-12-12T03:09:02Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Clinician_Reg_TC4@523884b2]" name="closeApp" is-config="true" duration-ms="229" started-at="2018-12-12T06:08:17Z" finished-at="2018-12-12T06:08:17Z">
           <params>
             <param index="0">
               <value>
@@ -190,7 +202,7 @@
         </test-method> <!-- closeApp -->
       </class> <!-- script.Clinician_Reg_TC4 -->
       <class name="script.Others_Reg_TC6">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Others_Reg_TC6@61832929]" name="openApp" is-config="true" duration-ms="10429" started-at="2018-12-12T03:09:23Z" finished-at="2018-12-12T03:09:34Z">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Others_Reg_TC6@61832929]" name="openApp" is-config="true" duration-ms="10554" started-at="2018-12-12T06:08:30Z" finished-at="2018-12-12T06:08:41Z">
           <params>
             <param index="0">
               <value>
@@ -206,96 +218,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="otherRegistration()[pri:6, instance:script.Others_Reg_TC6@61832929]" name="otherRegistration" duration-ms="8872" started-at="2018-12-12T03:09:34Z" finished-at="2018-12-12T03:09:43Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Submitted Successfully.]]>
-            </line>
-            <line>
-              <![CDATA[Test: otherRegistration is Pass]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- otherRegistration -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Others_Reg_TC6@61832929]" name="closeApp" is-config="true" duration-ms="290" started-at="2018-12-12T03:09:43Z" finished-at="2018-12-12T03:09:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=otherRegistration status=SUCCESS method=Others_Reg_TC6.otherRegistration()[pri:6, instance:script.Others_Reg_TC6@61832929] output=Submitted Successfully.]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TestName: otherRegistration Status: Pass]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- script.Others_Reg_TC6 -->
-      <class name="script.PaymentWithCard_TC7">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.PaymentWithCard_TC7@29774679]" name="openApp" is-config="true" duration-ms="6627" started-at="2018-12-12T03:09:43Z" finished-at="2018-12-12T03:09:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[localhost]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method status="FAIL" signature="paymentWithCard()[pri:7, instance:script.PaymentWithCard_TC7@29774679]" name="paymentWithCard" duration-ms="16393" started-at="2018-12-12T03:09:49Z" finished-at="2018-12-12T03:10:06Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="otherRegistration()[pri:6, instance:script.Others_Reg_TC6@61832929]" name="otherRegistration" duration-ms="4754" started-at="2018-12-12T06:08:41Z" finished-at="2018-12-12T06:08:46Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='pm-pay-details']"}
-  (Session info: chrome=70.0.3538.110)
-  (Driver info: chromedriver=2.44.609545 (c2f88692e98ce7233d2df7c724465ecacfe74df5),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
-System info: host: 'BTC-Mac.local', ip: 'fe80:0:0:0:c89:5fc8:6991:4664%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/ty/3vsm8cdd1ss...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51753}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: f6653752d9ab1645df4a319cd658947c
-*** Element info: {Using=xpath, value=//div[@class='pm-pay-details']}]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='pm-pay-details']"}
-  (Session info: chrome=70.0.3538.110)
-  (Driver info: chromedriver=2.44.609545 (c2f88692e98ce7233d2df7c724465ecacfe74df5),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
-System info: host: 'BTC-Mac.local', ip: 'fe80:0:0:0:c89:5fc8:6991:4664%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/ty/3vsm8cdd1ss...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51753}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: f6653752d9ab1645df4a319cd658947c
-*** Element info: {Using=xpath, value=//div[@class='pm-pay-details']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
-	at page.PaymentPage.checkPaymentSection(PaymentPage.java:121)
-	at script.PaymentWithCard_TC7.paymentWithCard(PaymentWithCard_TC7.java:33)
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at page.RegisterPage.checkForRegSuccess(RegisterPage.java:236)
+	at script.Others_Reg_TC6.otherRegistration(Others_Reg_TC6.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -322,33 +255,33 @@ Session ID: f6653752d9ab1645df4a319cd658947c
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Test: paymentWithCard is Fail]]>
+              <![CDATA[Test: otherRegistration is Fail]]>
             </line>
           </reporter-output>
-        </test-method> <!-- paymentWithCard -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.PaymentWithCard_TC7@29774679]" name="closeApp" is-config="true" duration-ms="665" started-at="2018-12-12T03:10:06Z" finished-at="2018-12-12T03:10:07Z">
+        </test-method> <!-- otherRegistration -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Others_Reg_TC6@61832929]" name="closeApp" is-config="true" duration-ms="677" started-at="2018-12-12T06:08:46Z" finished-at="2018-12-12T06:08:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=paymentWithCard status=FAILURE method=PaymentWithCard_TC7.paymentWithCard()[pri:7, instance:script.PaymentWithCard_TC7@29774679] output=Test: paymentWithCard is Fail]]]>
+                <![CDATA[[TestResult name=otherRegistration status=FAILURE method=Others_Reg_TC6.otherRegistration()[pri:6, instance:script.Others_Reg_TC6@61832929] output=Test: otherRegistration is Fail]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[TestName: paymentWithCard Status: Fail]]>
+              <![CDATA[TestName: otherRegistration Status: Fail]]>
             </line>
             <line>
-              <![CDATA[PHOTO: ./photo/Wed Dec 12 03_10_06 EST 2018.png]]>
+              <![CDATA[PHOTO: ./photo/Wed Dec 12 06_08_46 EST 2018.png]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- script.PaymentWithCard_TC7 -->
-      <class name="script.Create_LLR_Request_JPG_TC10">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Create_LLR_Request_JPG_TC10@3532ec19]" name="openApp" is-config="true" duration-ms="11344" started-at="2018-12-12T03:13:59Z" finished-at="2018-12-12T03:14:10Z">
+      </class> <!-- script.Others_Reg_TC6 -->
+      <class name="script.PaymentWithCard_TC7">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.PaymentWithCard_TC7@29774679]" name="openApp" is-config="true" duration-ms="7429" started-at="2018-12-12T06:08:46Z" finished-at="2018-12-12T06:08:54Z">
           <params>
             <param index="0">
               <value>
@@ -364,7 +297,58 @@ Session ID: f6653752d9ab1645df4a319cd658947c
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="create_LLR_jpg()[pri:10, instance:script.Create_LLR_Request_JPG_TC10@3532ec19]" name="create_LLR_jpg" duration-ms="49303" started-at="2018-12-12T03:14:10Z" finished-at="2018-12-12T03:14:59Z">
+        <test-method status="PASS" signature="paymentWithCard()[pri:7, instance:script.PaymentWithCard_TC7@29774679]" name="paymentWithCard" duration-ms="62265" started-at="2018-12-12T06:08:54Z" finished-at="2018-12-12T06:09:56Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Payment Section is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[Both prices are equal.]]>
+            </line>
+            <line>
+              <![CDATA[Total amount and payable amount are same.]]>
+            </line>
+            <line>
+              <![CDATA[Payment is confirmed and in request creation page.]]>
+            </line>
+            <line>
+              <![CDATA[Test: paymentWithCard is Pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- paymentWithCard -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.PaymentWithCard_TC7@29774679]" name="closeApp" is-config="true" duration-ms="620" started-at="2018-12-12T06:09:56Z" finished-at="2018-12-12T06:09:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=paymentWithCard status=SUCCESS method=PaymentWithCard_TC7.paymentWithCard()[pri:7, instance:script.PaymentWithCard_TC7@29774679] output=Payment Section is displayed.]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestName: paymentWithCard Status: Pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- script.PaymentWithCard_TC7 -->
+      <class name="script.Create_LLR_Request_JPG_TC10">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Create_LLR_Request_JPG_TC10@3532ec19]" name="openApp" is-config="true" duration-ms="9960" started-at="2018-12-12T06:14:35Z" finished-at="2018-12-12T06:14:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="create_LLR_jpg()[pri:10, instance:script.Create_LLR_Request_JPG_TC10@3532ec19]" name="create_LLR_jpg" duration-ms="48042" started-at="2018-12-12T06:14:45Z" finished-at="2018-12-12T06:15:33Z">
           <reporter-output>
             <line>
               <![CDATA[LLR Request List Page is displayed.]]>
@@ -374,7 +358,7 @@ Session ID: f6653752d9ab1645df4a319cd658947c
             </line>
           </reporter-output>
         </test-method> <!-- create_LLR_jpg -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Create_LLR_Request_JPG_TC10@3532ec19]" name="closeApp" is-config="true" duration-ms="384" started-at="2018-12-12T03:14:59Z" finished-at="2018-12-12T03:15:00Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Create_LLR_Request_JPG_TC10@3532ec19]" name="closeApp" is-config="true" duration-ms="302" started-at="2018-12-12T06:15:33Z" finished-at="2018-12-12T06:15:34Z">
           <params>
             <param index="0">
               <value>
@@ -389,8 +373,8 @@ Session ID: f6653752d9ab1645df4a319cd658947c
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- script.Create_LLR_Request_JPG_TC10 -->
-      <class name="script.Create_LLR_Request_PDF_TC12">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Create_LLR_Request_PDF_TC12@ae45eb6]" name="openApp" is-config="true" duration-ms="24566" started-at="2018-12-12T03:16:17Z" finished-at="2018-12-12T03:16:41Z">
+      <class name="script.LabAdmin_Reg_TC5">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.LabAdmin_Reg_TC5@5b275dab]" name="openApp" is-config="true" duration-ms="7410" started-at="2018-12-12T06:08:17Z" finished-at="2018-12-12T06:08:25Z">
           <params>
             <param index="0">
               <value>
@@ -406,7 +390,86 @@ Session ID: f6653752d9ab1645df4a319cd658947c
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="create_LLR_pdf()[pri:12, instance:script.Create_LLR_Request_PDF_TC12@ae45eb6]" name="create_LLR_pdf" duration-ms="71731" started-at="2018-12-12T03:16:41Z" finished-at="2018-12-12T03:17:53Z">
+        <test-method status="FAIL" signature="labAdminRegistration()[pri:5, instance:script.LabAdmin_Reg_TC5@5b275dab]" name="labAdminRegistration" duration-ms="4620" started-at="2018-12-12T06:08:25Z" finished-at="2018-12-12T06:08:29Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at page.RegisterPage.checkForRegSuccess(RegisterPage.java:236)
+	at script.LabAdmin_Reg_TC5.labAdminRegistration(LabAdmin_Reg_TC5.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test: labAdminRegistration is Fail]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- labAdminRegistration -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.LabAdmin_Reg_TC5@5b275dab]" name="closeApp" is-config="true" duration-ms="932" started-at="2018-12-12T06:08:29Z" finished-at="2018-12-12T06:08:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=labAdminRegistration status=FAILURE method=LabAdmin_Reg_TC5.labAdminRegistration()[pri:5, instance:script.LabAdmin_Reg_TC5@5b275dab] output=Test: labAdminRegistration is Fail]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestName: labAdminRegistration Status: Fail]]>
+            </line>
+            <line>
+              <![CDATA[PHOTO: ./photo/Wed Dec 12 06_08_29 EST 2018.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- script.LabAdmin_Reg_TC5 -->
+      <class name="script.Create_LLR_Request_PDF_TC12">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Create_LLR_Request_PDF_TC12@ae45eb6]" name="openApp" is-config="true" duration-ms="11395" started-at="2018-12-12T06:18:15Z" finished-at="2018-12-12T06:18:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="create_LLR_pdf()[pri:12, instance:script.Create_LLR_Request_PDF_TC12@ae45eb6]" name="create_LLR_pdf" duration-ms="203957" started-at="2018-12-12T06:18:26Z" finished-at="2018-12-12T06:21:50Z">
           <reporter-output>
             <line>
               <![CDATA[LLR Request List Page is displayed.]]>
@@ -416,7 +479,7 @@ Session ID: f6653752d9ab1645df4a319cd658947c
             </line>
           </reporter-output>
         </test-method> <!-- create_LLR_pdf -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Create_LLR_Request_PDF_TC12@ae45eb6]" name="closeApp" is-config="true" duration-ms="606" started-at="2018-12-12T03:17:53Z" finished-at="2018-12-12T03:17:54Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Create_LLR_Request_PDF_TC12@ae45eb6]" name="closeApp" is-config="true" duration-ms="373" started-at="2018-12-12T06:21:50Z" finished-at="2018-12-12T06:21:50Z">
           <params>
             <param index="0">
               <value>
@@ -431,50 +494,8 @@ Session ID: f6653752d9ab1645df4a319cd658947c
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- script.Create_LLR_Request_PDF_TC12 -->
-      <class name="script.LabAdmin_Reg_TC5">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.LabAdmin_Reg_TC5@5b275dab]" name="openApp" is-config="true" duration-ms="10024" started-at="2018-12-12T03:09:02Z" finished-at="2018-12-12T03:09:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[localhost]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="labAdminRegistration()[pri:5, instance:script.LabAdmin_Reg_TC5@5b275dab]" name="labAdminRegistration" duration-ms="10582" started-at="2018-12-12T03:09:12Z" finished-at="2018-12-12T03:09:23Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Submitted Successfully.]]>
-            </line>
-            <line>
-              <![CDATA[Test: labAdminRegistration is Pass]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- labAdminRegistration -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.LabAdmin_Reg_TC5@5b275dab]" name="closeApp" is-config="true" duration-ms="271" started-at="2018-12-12T03:09:23Z" finished-at="2018-12-12T03:09:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=labAdminRegistration status=SUCCESS method=LabAdmin_Reg_TC5.labAdminRegistration()[pri:5, instance:script.LabAdmin_Reg_TC5@5b275dab] output=Submitted Successfully.]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TestName: labAdminRegistration Status: Pass]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- script.LabAdmin_Reg_TC5 -->
       <class name="script.Invalid_Email_TC2">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Invalid_Email_TC2@28d25987]" name="openApp" is-config="true" duration-ms="13370" started-at="2018-12-12T03:07:49Z" finished-at="2018-12-12T03:08:02Z">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Invalid_Email_TC2@28d25987]" name="openApp" is-config="true" duration-ms="10121" started-at="2018-12-12T06:06:58Z" finished-at="2018-12-12T06:07:08Z">
           <params>
             <param index="0">
               <value>
@@ -490,80 +511,33 @@ Session ID: f6653752d9ab1645df4a319cd658947c
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="FAIL" signature="invalidEmail()[pri:2, instance:script.Invalid_Email_TC2@28d25987]" name="invalidEmail" duration-ms="15947" started-at="2018-12-12T03:08:02Z" finished-at="2018-12-12T03:08:18Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for text ('Welcome to My Gene Counsel!') to be present in element [[ChromeDriver: chrome on MAC (b407e169aa36836ac9c9005c10ecc624)] -> xpath: //div[@class='login__title']] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
-System info: host: 'BTC-Mac.local', ip: 'fe80:0:0:0:c89:5fc8:6991:4664%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/ty/3vsm8cdd1ss...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50956}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: b407e169aa36836ac9c9005c10ecc624]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Welcome to My Gene Counsel!') to be present in element [[ChromeDriver: chrome on MAC (b407e169aa36836ac9c9005c10ecc624)] -> xpath: //div[@class='login__title']] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
-System info: host: 'BTC-Mac.local', ip: 'fe80:0:0:0:c89:5fc8:6991:4664%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/ty/3vsm8cdd1ss...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50956}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: b407e169aa36836ac9c9005c10ecc624
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at page.RegisterPage.waitForAccessCodePageLoad(RegisterPage.java:197)
-	at script.Invalid_Email_TC2.invalidEmail(Invalid_Email_TC2.java:39)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="invalidEmail()[pri:2, instance:script.Invalid_Email_TC2@28d25987]" name="invalidEmail" duration-ms="5604" started-at="2018-12-12T06:07:08Z" finished-at="2018-12-12T06:07:13Z">
           <reporter-output>
             <line>
-              <![CDATA[Test: invalidEmail is Fail]]>
+              <![CDATA[Did not go to next page and error message is displayed for duplication of email id.]]>
+            </line>
+            <line>
+              <![CDATA[Test: invalidEmail is Pass]]>
             </line>
           </reporter-output>
         </test-method> <!-- invalidEmail -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Invalid_Email_TC2@28d25987]" name="closeApp" is-config="true" duration-ms="732" started-at="2018-12-12T03:08:18Z" finished-at="2018-12-12T03:08:19Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Invalid_Email_TC2@28d25987]" name="closeApp" is-config="true" duration-ms="285" started-at="2018-12-12T06:07:13Z" finished-at="2018-12-12T06:07:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=invalidEmail status=FAILURE method=Invalid_Email_TC2.invalidEmail()[pri:2, instance:script.Invalid_Email_TC2@28d25987] output=Test: invalidEmail is Fail]]]>
+                <![CDATA[[TestResult name=invalidEmail status=SUCCESS method=Invalid_Email_TC2.invalidEmail()[pri:2, instance:script.Invalid_Email_TC2@28d25987] output=Did not go to next page and error message is displayed for duplication of email id.]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[TestName: invalidEmail Status: Fail]]>
-            </line>
-            <line>
-              <![CDATA[PHOTO: ./photo/Wed Dec 12 03_08_18 EST 2018.png]]>
+              <![CDATA[TestName: invalidEmail Status: Pass]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- script.Invalid_Email_TC2 -->
       <class name="script.Valid_Email_TC1">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Valid_Email_TC1@59fa1d9b]" name="openApp" is-config="true" duration-ms="12486" started-at="2018-12-12T03:06:42Z" finished-at="2018-12-12T03:06:54Z">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Valid_Email_TC1@59fa1d9b]" name="openApp" is-config="true" duration-ms="11923" started-at="2018-12-12T06:05:52Z" finished-at="2018-12-12T06:06:04Z">
           <params>
             <param index="0">
               <value>
@@ -579,110 +553,36 @@ Session ID: b407e169aa36836ac9c9005c10ecc624
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="FAIL" signature="validEmail()[pri:1, instance:script.Valid_Email_TC1@59fa1d9b]" name="validEmail" duration-ms="53480" started-at="2018-12-12T03:06:54Z" finished-at="2018-12-12T03:07:48Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='pm-pay-details']"}
-  (Session info: chrome=70.0.3538.110)
-  (Driver info: chromedriver=2.44.609545 (c2f88692e98ce7233d2df7c724465ecacfe74df5),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
-System info: host: 'BTC-Mac.local', ip: 'fe80:0:0:0:c89:5fc8:6991:4664%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/ty/3vsm8cdd1ss...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50587}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: a57a6478bf7e4cf6351c479618165277
-*** Element info: {Using=xpath, value=//div[@class='pm-pay-details']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='pm-pay-details']"}
-  (Session info: chrome=70.0.3538.110)
-  (Driver info: chromedriver=2.44.609545 (c2f88692e98ce7233d2df7c724465ecacfe74df5),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
-System info: host: 'BTC-Mac.local', ip: 'fe80:0:0:0:c89:5fc8:6991:4664%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/ty/3vsm8cdd1ss...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50587}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: a57a6478bf7e4cf6351c479618165277
-*** Element info: {Using=xpath, value=//div[@class='pm-pay-details']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
-	at page.PaymentPage.checkPaymentSection(PaymentPage.java:121)
-	at script.Valid_Email_TC1.validEmail(Valid_Email_TC1.java:50)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="validEmail()[pri:1, instance:script.Valid_Email_TC1@59fa1d9b]" name="validEmail" duration-ms="53262" started-at="2018-12-12T06:06:04Z" finished-at="2018-12-12T06:06:57Z">
           <reporter-output>
             <line>
               <![CDATA[Access Code Page is Displayed.]]>
             </line>
             <line>
-              <![CDATA[Test: validEmail is Fail]]>
+              <![CDATA[Payment Section is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[Test: validEmail is Pass]]>
             </line>
           </reporter-output>
         </test-method> <!-- validEmail -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Valid_Email_TC1@59fa1d9b]" name="closeApp" is-config="true" duration-ms="914" started-at="2018-12-12T03:07:48Z" finished-at="2018-12-12T03:07:49Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Valid_Email_TC1@59fa1d9b]" name="closeApp" is-config="true" duration-ms="878" started-at="2018-12-12T06:06:57Z" finished-at="2018-12-12T06:06:58Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validEmail status=FAILURE method=Valid_Email_TC1.validEmail()[pri:1, instance:script.Valid_Email_TC1@59fa1d9b] output=Access Code Page is Displayed.]]]>
+                <![CDATA[[TestResult name=validEmail status=SUCCESS method=Valid_Email_TC1.validEmail()[pri:1, instance:script.Valid_Email_TC1@59fa1d9b] output=Access Code Page is Displayed.]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[TestName: validEmail Status: Fail]]>
-            </line>
-            <line>
-              <![CDATA[PHOTO: ./photo/Wed Dec 12 03_07_48 EST 2018.png]]>
+              <![CDATA[TestName: validEmail Status: Pass]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- script.Valid_Email_TC1 -->
       <class name="script.RegisterAfterSignout_TC3">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.RegisterAfterSignout_TC3@4501b7af]" name="openApp" is-config="true" duration-ms="6789" started-at="2018-12-12T03:08:19Z" finished-at="2018-12-12T03:08:25Z">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.RegisterAfterSignout_TC3@4501b7af]" name="openApp" is-config="true" duration-ms="12887" started-at="2018-12-12T06:07:14Z" finished-at="2018-12-12T06:07:27Z">
           <params>
             <param index="0">
               <value>
@@ -698,80 +598,36 @@ Session ID: a57a6478bf7e4cf6351c479618165277
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="FAIL" signature="regAfterSignOut()[pri:3, instance:script.RegisterAfterSignout_TC3@4501b7af]" name="regAfterSignOut" duration-ms="12335" started-at="2018-12-12T03:08:25Z" finished-at="2018-12-12T03:08:38Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for text ('Welcome to My Gene Counsel!') to be present in element [[ChromeDriver: chrome on MAC (25ac5094f8e0571f4144f8b779819794)] -> xpath: //div[@class='login__title']] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
-System info: host: 'BTC-Mac.local', ip: 'fe80:0:0:0:c89:5fc8:6991:4664%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/ty/3vsm8cdd1ss...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51146}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: 25ac5094f8e0571f4144f8b779819794]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text ('Welcome to My Gene Counsel!') to be present in element [[ChromeDriver: chrome on MAC (25ac5094f8e0571f4144f8b779819794)] -> xpath: //div[@class='login__title']] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
-System info: host: 'BTC-Mac.local', ip: 'fe80:0:0:0:c89:5fc8:6991:4664%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/ty/3vsm8cdd1ss...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51146}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: 25ac5094f8e0571f4144f8b779819794
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at page.RegisterPage.waitForAccessCodePageLoad(RegisterPage.java:197)
-	at script.RegisterAfterSignout_TC3.regAfterSignOut(RegisterAfterSignout_TC3.java:31)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="regAfterSignOut()[pri:3, instance:script.RegisterAfterSignout_TC3@4501b7af]" name="regAfterSignOut" duration-ms="23446" started-at="2018-12-12T06:07:27Z" finished-at="2018-12-12T06:07:50Z">
           <reporter-output>
             <line>
-              <![CDATA[Test: regAfterSignOut is Fail]]>
+              <![CDATA[Access Code Page is Displayed.]]>
+            </line>
+            <line>
+              <![CDATA[Access Code Page is Displayed.]]>
+            </line>
+            <line>
+              <![CDATA[Test: regAfterSignOut is Pass]]>
             </line>
           </reporter-output>
         </test-method> <!-- regAfterSignOut -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.RegisterAfterSignout_TC3@4501b7af]" name="closeApp" is-config="true" duration-ms="670" started-at="2018-12-12T03:08:38Z" finished-at="2018-12-12T03:08:38Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.RegisterAfterSignout_TC3@4501b7af]" name="closeApp" is-config="true" duration-ms="260" started-at="2018-12-12T06:07:50Z" finished-at="2018-12-12T06:07:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=regAfterSignOut status=FAILURE method=RegisterAfterSignout_TC3.regAfterSignOut()[pri:3, instance:script.RegisterAfterSignout_TC3@4501b7af] output=Test: regAfterSignOut is Fail]]]>
+                <![CDATA[[TestResult name=regAfterSignOut status=SUCCESS method=RegisterAfterSignout_TC3.regAfterSignOut()[pri:3, instance:script.RegisterAfterSignout_TC3@4501b7af] output=Access Code Page is Displayed.]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[TestName: regAfterSignOut Status: Fail]]>
-            </line>
-            <line>
-              <![CDATA[PHOTO: ./photo/Wed Dec 12 03_08_38 EST 2018.png]]>
+              <![CDATA[TestName: regAfterSignOut Status: Pass]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- script.RegisterAfterSignout_TC3 -->
       <class name="script.Create_LLR_Request_TC9">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Create_LLR_Request_TC9@26653222]" name="openApp" is-config="true" duration-ms="7872" started-at="2018-12-12T03:13:36Z" finished-at="2018-12-12T03:13:44Z">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Create_LLR_Request_TC9@26653222]" name="openApp" is-config="true" duration-ms="9450" started-at="2018-12-12T06:13:22Z" finished-at="2018-12-12T06:13:31Z">
           <params>
             <param index="0">
               <value>
@@ -787,148 +643,33 @@ Session ID: 25ac5094f8e0571f4144f8b779819794
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="FAIL" signature="create_LLR_Request()[pri:9, instance:script.Create_LLR_Request_TC9@26653222]" name="create_LLR_Request" duration-ms="14149" started-at="2018-12-12T03:13:44Z" finished-at="2018-12-12T03:13:58Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: Element <select class="form-control" required="required" id="geneTestType0" name="llrRequestTestResultList[0].geneName" index="0" onchange="setValues(this);">...</select> is not clickable at point (369, 557). Other element would receive the click: <div class="col-md-6">...</div>
-  (Session info: chrome=70.0.3538.110)
-  (Driver info: chromedriver=2.44.609545 (c2f88692e98ce7233d2df7c724465ecacfe74df5),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
-System info: host: 'BTC-Mac.local', ip: 'fe80:0:0:0:c89:5fc8:6991:4664%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/ty/3vsm8cdd1ss...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53156}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: c63557c61885d67e3e38f95de676d634]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <select class="form-control" required="required" id="geneTestType0" name="llrRequestTestResultList[0].geneName" index="0" onchange="setValues(this);">...</select> is not clickable at point (369, 557). Other element would receive the click: <div class="col-md-6">...</div>
-  (Session info: chrome=70.0.3538.110)
-  (Driver info: chromedriver=2.44.609545 (c2f88692e98ce7233d2df7c724465ecacfe74df5),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
-System info: host: 'BTC-Mac.local', ip: 'fe80:0:0:0:c89:5fc8:6991:4664%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609545 (c2f88692e98ce7..., userDataDir: /var/folders/ty/3vsm8cdd1ss...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53156}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: c63557c61885d67e3e38f95de676d634
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at page.LLR_RequestPage.selectgeneTestType(LLR_RequestPage.java:179)
-	at script.Create_LLR_Request_TC9.create_LLR_Request(Create_LLR_Request_TC9.java:47)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Test: create_LLR_Request is Fail]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- create_LLR_Request -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Create_LLR_Request_TC9@26653222]" name="closeApp" is-config="true" duration-ms="674" started-at="2018-12-12T03:13:58Z" finished-at="2018-12-12T03:13:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=create_LLR_Request status=FAILURE method=Create_LLR_Request_TC9.create_LLR_Request()[pri:9, instance:script.Create_LLR_Request_TC9@26653222] output=Test: create_LLR_Request is Fail]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TestName: create_LLR_Request Status: Fail]]>
-            </line>
-            <line>
-              <![CDATA[PHOTO: ./photo/Wed Dec 12 03_13_58 EST 2018.png]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- script.Create_LLR_Request_TC9 -->
-      <class name="script.View_LLR_List_TC13">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.View_LLR_List_TC13@59f99ea]" name="openApp" is-config="true" duration-ms="13430" started-at="2018-12-12T03:17:54Z" finished-at="2018-12-12T03:18:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[localhost]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="view_LLR_List()[pri:13, instance:script.View_LLR_List_TC13@59f99ea]" name="view_LLR_List" duration-ms="14328" started-at="2018-12-12T03:18:07Z" finished-at="2018-12-12T03:18:22Z">
+        <test-method status="PASS" signature="create_LLR_Request()[pri:9, instance:script.Create_LLR_Request_TC9@26653222]" name="create_LLR_Request" duration-ms="63513" started-at="2018-12-12T06:13:31Z" finished-at="2018-12-12T06:14:35Z">
           <reporter-output>
             <line>
               <![CDATA[LLR Request List Page is displayed.]]>
             </line>
             <line>
-              <![CDATA[The Report is not editable.]]>
-            </line>
-            <line>
-              <![CDATA[Test: view_LLR_List is Pass]]>
+              <![CDATA[Test: create_LLR_Request is Pass]]>
             </line>
           </reporter-output>
-        </test-method> <!-- view_LLR_List -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.View_LLR_List_TC13@59f99ea]" name="closeApp" is-config="true" duration-ms="210" started-at="2018-12-12T03:18:22Z" finished-at="2018-12-12T03:18:22Z">
+        </test-method> <!-- create_LLR_Request -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Create_LLR_Request_TC9@26653222]" name="closeApp" is-config="true" duration-ms="315" started-at="2018-12-12T06:14:35Z" finished-at="2018-12-12T06:14:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=view_LLR_List status=SUCCESS method=View_LLR_List_TC13.view_LLR_List()[pri:13, instance:script.View_LLR_List_TC13@59f99ea] output=LLR Request List Page is displayed.]]]>
+                <![CDATA[[TestResult name=create_LLR_Request status=SUCCESS method=Create_LLR_Request_TC9.create_LLR_Request()[pri:9, instance:script.Create_LLR_Request_TC9@26653222] output=LLR Request List Page is displayed.]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[TestName: view_LLR_List Status: Pass]]>
+              <![CDATA[TestName: create_LLR_Request Status: Pass]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- script.View_LLR_List_TC13 -->
+      </class> <!-- script.Create_LLR_Request_TC9 -->
       <class name="script.PaymentWithPaypal_TC8">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.PaymentWithPaypal_TC8@3ffc5af1]" name="openApp" is-config="true" duration-ms="7185" started-at="2018-12-12T03:10:07Z" finished-at="2018-12-12T03:10:14Z">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.PaymentWithPaypal_TC8@3ffc5af1]" name="openApp" is-config="true" duration-ms="13557" started-at="2018-12-12T06:09:57Z" finished-at="2018-12-12T06:10:10Z">
           <params>
             <param index="0">
               <value>
@@ -944,7 +685,7 @@ Session ID: c63557c61885d67e3e38f95de676d634
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="paymentWithPaypal()[pri:8, instance:script.PaymentWithPaypal_TC8@3ffc5af1]" name="paymentWithPaypal" duration-ms="158396" started-at="2018-12-12T03:10:14Z" finished-at="2018-12-12T03:12:52Z">
+        <test-method status="PASS" signature="paymentWithPaypal()[pri:8, instance:script.PaymentWithPaypal_TC8@3ffc5af1]" name="paymentWithPaypal" duration-ms="141945" started-at="2018-12-12T06:10:10Z" finished-at="2018-12-12T06:12:32Z">
           <reporter-output>
             <line>
               <![CDATA[Payment Section is displayed.]]>
@@ -966,7 +707,7 @@ Session ID: c63557c61885d67e3e38f95de676d634
             </line>
           </reporter-output>
         </test-method> <!-- paymentWithPaypal -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.PaymentWithPaypal_TC8@3ffc5af1]" name="closeApp" is-config="true" duration-ms="455" started-at="2018-12-12T03:12:52Z" finished-at="2018-12-12T03:12:53Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.PaymentWithPaypal_TC8@3ffc5af1]" name="closeApp" is-config="true" duration-ms="292" started-at="2018-12-12T06:12:32Z" finished-at="2018-12-12T06:12:32Z">
           <params>
             <param index="0">
               <value>
@@ -981,8 +722,8 @@ Session ID: c63557c61885d67e3e38f95de676d634
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- script.PaymentWithPaypal_TC8 -->
-      <class name="script.Create_LLR_Request_PNG_TC11">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Create_LLR_Request_PNG_TC11@68c4039c]" name="openApp" is-config="true" duration-ms="9152" started-at="2018-12-12T03:15:00Z" finished-at="2018-12-12T03:15:09Z">
+      <class name="script.View_LLR_List_TC13">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.View_LLR_List_TC13@59f99ea]" name="openApp" is-config="true" duration-ms="10022" started-at="2018-12-12T06:21:50Z" finished-at="2018-12-12T06:22:00Z">
           <params>
             <param index="0">
               <value>
@@ -998,7 +739,52 @@ Session ID: c63557c61885d67e3e38f95de676d634
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="create_LLR_png()[pri:11, instance:script.Create_LLR_Request_PNG_TC11@68c4039c]" name="create_LLR_png" duration-ms="67697" started-at="2018-12-12T03:15:09Z" finished-at="2018-12-12T03:16:17Z">
+        <test-method status="PASS" signature="view_LLR_List()[pri:13, instance:script.View_LLR_List_TC13@59f99ea]" name="view_LLR_List" duration-ms="11987" started-at="2018-12-12T06:22:00Z" finished-at="2018-12-12T06:22:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[LLR Request List Page is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[The Report is not editable.]]>
+            </line>
+            <line>
+              <![CDATA[Test: view_LLR_List is Pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- view_LLR_List -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.View_LLR_List_TC13@59f99ea]" name="closeApp" is-config="true" duration-ms="162" started-at="2018-12-12T06:22:12Z" finished-at="2018-12-12T06:22:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=view_LLR_List status=SUCCESS method=View_LLR_List_TC13.view_LLR_List()[pri:13, instance:script.View_LLR_List_TC13@59f99ea] output=LLR Request List Page is displayed.]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestName: view_LLR_List Status: Pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- script.View_LLR_List_TC13 -->
+      <class name="script.Create_LLR_Request_PNG_TC11">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.Create_LLR_Request_PNG_TC11@68c4039c]" name="openApp" is-config="true" duration-ms="10563" started-at="2018-12-12T06:15:34Z" finished-at="2018-12-12T06:15:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="create_LLR_png()[pri:11, instance:script.Create_LLR_Request_PNG_TC11@68c4039c]" name="create_LLR_png" duration-ms="149393" started-at="2018-12-12T06:15:44Z" finished-at="2018-12-12T06:18:14Z">
           <reporter-output>
             <line>
               <![CDATA[LLR Request List Page is displayed.]]>
@@ -1008,7 +794,7 @@ Session ID: c63557c61885d67e3e38f95de676d634
             </line>
           </reporter-output>
         </test-method> <!-- create_LLR_png -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Create_LLR_Request_PNG_TC11@68c4039c]" name="closeApp" is-config="true" duration-ms="395" started-at="2018-12-12T03:16:17Z" finished-at="2018-12-12T03:16:17Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.Create_LLR_Request_PNG_TC11@68c4039c]" name="closeApp" is-config="true" duration-ms="1040" started-at="2018-12-12T06:18:14Z" finished-at="2018-12-12T06:18:15Z">
           <params>
             <param index="0">
               <value>
@@ -1024,7 +810,7 @@ Session ID: c63557c61885d67e3e38f95de676d634
         </test-method> <!-- closeApp -->
       </class> <!-- script.Create_LLR_Request_PNG_TC11 -->
       <class name="script.CMS_Auto">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.CMS_Auto@5e5792a0]" name="openApp" is-config="true" duration-ms="6872" started-at="2018-12-12T03:12:53Z" finished-at="2018-12-12T03:12:59Z">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.CMS_Auto@5e5792a0]" name="openApp" is-config="true" duration-ms="7428" started-at="2018-12-12T06:12:32Z" finished-at="2018-12-12T06:12:40Z">
           <params>
             <param index="0">
               <value>
@@ -1040,14 +826,14 @@ Session ID: c63557c61885d67e3e38f95de676d634
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="creationOfDDM()[pri:0, instance:script.CMS_Auto@5e5792a0]" name="creationOfDDM" duration-ms="36304" started-at="2018-12-12T03:12:59Z" finished-at="2018-12-12T03:13:36Z">
+        <test-method status="PASS" signature="creationOfDDM()[pri:0, instance:script.CMS_Auto@5e5792a0]" name="creationOfDDM" duration-ms="42021" started-at="2018-12-12T06:12:40Z" finished-at="2018-12-12T06:13:22Z">
           <reporter-output>
             <line>
               <![CDATA[Test: creationOfDDM is Pass]]>
             </line>
           </reporter-output>
         </test-method> <!-- creationOfDDM -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.CMS_Auto@5e5792a0]" name="closeApp" is-config="true" duration-ms="218" started-at="2018-12-12T03:13:36Z" finished-at="2018-12-12T03:13:36Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.CMS_Auto@5e5792a0]" name="closeApp" is-config="true" duration-ms="171" started-at="2018-12-12T06:13:22Z" finished-at="2018-12-12T06:13:22Z">
           <params>
             <param index="0">
               <value>
