@@ -38,6 +38,14 @@ public class PaymentPage {
 	@FindBy(id="promocodeId")
 	private WebElement promoTxtField;
 	
+	@FindBy(xpath="//li[contains(text(),'Congratulations')]")
+	private WebElement SuccMsg;
+	
+	@FindBy(xpath="//li[contains(text(),'This coupon code is invalid')]")
+	private WebElement failMsg;
+	
+	
+	
 	@FindBy(id="applyBtn")
 	private WebElement apply;
 	
